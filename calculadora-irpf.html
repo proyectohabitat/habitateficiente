@@ -1,70 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IRPF 2026 | Tu Ahorro Eficiente</title>
-
-    <meta name="description" content="Calculadoras gratuitas de ahorro energético en España. Deducción IRPF por eficiencia y simulador solar actualizado a 2026.">
-<meta name="keywords" content="ahorro energetico, calculadora irpf 2026, placas solares españa, eficiencia energetica vivienda">
-<meta name="author" content="Tu Ahorro Eficiente">
-
-<meta property="og:title" content="Tu Ahorro Eficiente | Optimiza tu hogar en 2026">
-<meta property="og:description" content="Usa nuestras herramientas gratuitas para ahorrar miles de euros en impuestos y facturas.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tuahorroeficiente.es">
-<meta property="og:image" content="https://tuahorroeficiente.es/og-image.jpg"> <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3105/3105035.png" type="image/x-icon">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            DEFAULT: '#01488e',
-                            dark: '#003366',
-                            light: '#e6f0fa',
-                        }
-                    },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                }
-            }
-        }
-    </script>
-    
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#01488e',dark:'#003366',light:'#e6f0fa'}},fontFamily:{sans:['Inter', 'sans-serif']}}}}</script>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col">
     <nav class="bg-white border-b border-slate-100 py-4 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2 rounded-lg transition"><i data-lucide="zap" class="w-5 h-5"></i></div>
-                <span class="text-xl font-extrabold tracking-tighter">TuAhorro<span class="text-brand">Eficiente</span></span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html" class="hover:text-brand transition">Inicio</a>
-                <a href="blog.html" class="hover:text-brand transition">Blog</a>
-                <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-            </div>
+            <a href="index.html" class="flex items-center gap-2 group"><div class="bg-brand text-white p-2 rounded-lg"><i data-lucide="zap" class="w-5 h-5"></i></div><span class="text-xl font-bold tracking-tighter">TuAhorro<span class="text-brand">Eficiente</span></span></a>
+            <div class="flex gap-6 text-sm font-semibold text-slate-500"><a href="index.html">Inicio</a><a href="blog.html">Blog</a><a href="contacto.html">Contacto</a></div>
         </div>
     </nav>
 
-    <section class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100">
-        <h2 class="text-3xl font-extrabold tracking-tight text-slate-950 mb-8">Guía 2026: Deducciones por Eficiencia Energética</h2>
-        </section>
+    <main class="flex-grow py-16 px-6">
+        <div class="max-w-2xl mx-auto text-center mb-12"><h1 class="text-4xl font-black tracking-tight mb-4">Calculadora IRPF Energética</h1><p class="text-slate-500">Optimiza tu declaración de la renta con tus reformas de 2026.</p></div>
+        
+        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10">
+            <div class="space-y-8">
+                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Inversión total (€)</label><input type="number" id="inversion" placeholder="0.00" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none text-2xl font-bold transition-all"></div>
+                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Tipo de Deducción</label>
+                    <select id="tipo" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none font-semibold">
+                        <option value="0.20">Reducción demanda (20%)</option><option value="0.40">Reducción consumo (40%)</option><option value="0.60">Rehabilitación edificio (60%)</option>
+                    </select>
+                </div>
+                <button onclick="calcular()" class="w-full bg-brand text-white py-6 rounded-2xl font-bold text-lg shadow-xl hover:bg-brand-dark transition-all">CALCULAR AHORRO</button>
+            </div>
+            <div id="resultado" class="hidden mt-12 pt-12 border-t text-center animate-pulse"><p class="text-brand font-bold uppercase text-xs mb-2">Tu devolución es de:</p><div id="cuantia" class="text-5xl font-black text-brand tracking-tighter">0,00€</div></div>
+        </div>
+    </main>
 
-    <script>lucide.createIcons();</script>
+    <section class="max-w-4xl mx-auto px-6 py-16 border-t">
+        <h2 class="text-3xl font-bold mb-8">Guía 2026: Deducciones por Eficiencia</h2>
+        <div class="grid md:grid-cols-2 gap-8 text-sm text-slate-600">
+            <div><h3 class="font-bold text-slate-950 mb-2 italic">Deducción del 20%</h3><p>Para obras que reduzcan la demanda de calefacción en un 7%. Límite: 5.000€.</p></div>
+            <div><h3 class="font-bold text-slate-950 mb-2 italic">Deducción del 40%</h3><p>Para reducción del consumo de energía primaria en un 30%. Límite: 7.500€.</p></div>
+        </div>
+    </section>
+    <script>
+        lucide.createIcons();
+        function calcular() {
+            const inv = parseFloat(document.getElementById('inversion').value);
+            const porc = parseFloat(document.getElementById('tipo').value);
+            if(inv > 0) {
+                let res = inv * porc;
+                if(porc <= 0.4 && res > 2000) res = 2000; else if(porc == 0.6 && res > 9000) res = 9000;
+                document.getElementById('cuantia').innerText = res.toLocaleString('es-ES', {style:'currency', currency:'EUR'});
+                document.getElementById('resultado').classList.remove('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
