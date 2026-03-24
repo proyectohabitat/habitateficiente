@@ -2,100 +2,293 @@
 <html lang="es" class="scroll-smooth">
 <head>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Ahorro Eficiente | Herramientas de Optimización Energética 2026</title>
-    <meta name="description" content="Calculadoras gratuitas de ahorro energético en España. Deducción IRPF por eficiencia y simulador solar actualizado a 2026.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Tu Ahorro Eficiente | Portal de Inteligencia Energética Doméstica 2026</title>
+    
+    <meta name="description" content="Domina tu factura eléctrica en 2026. Herramientas de precisión para calcular tu deducción IRPF por eficiencia energética y simulador solar gratuito según normativa BOE.">
+    <link rel="canonical" href="https://tuahorroeficiente.es/" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#e6f0fa' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#01488e', // Azul Corporativo Principal
+                            dark: '#003366',
+                            light: '#f0f7ff', // Azul muy pálido para fondos
+                            accent: '#007bff' // Azul brillante para acentos técnicos
+                        },
+                        slate: {
+                            950: '#0a0f1e' // Un negro más azulado y profundo
+                        }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    backgroundImage: {
+                        'grid-slate': "url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIihoZWlnaHQ9IjMyIiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMTUsIDIzLCA0MiwgMC4wNSkiPjxwYXRoIGQ9Ik0wIC41SDMxLjVWMzIiLz48L3N2Zz4=')"
+                    }
+                }
+            }
         }
     </script>
+    
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        /* Suavizado de tipografía */
+        body { font-feature-settings: "ss01", "ss03", "cv01-cv10"; }
+        .bg-grid-slate { background-image: theme('backgroundImage.grid-slate'); }
+    </style>
 </head>
 <body class="bg-white text-slate-900 antialiased font-sans">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2.5 rounded-xl transition"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                <div class="bg-brand text-white p-2.5 rounded-xl group-hover:bg-brand-dark transition-colors">
+                    <i data-lucide="zap" class="w-6 h-6"></i>
+                </div>
                 <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span class="text-brand">Eficiente</span></h1>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#contexto" class="hover:text-brand transition">El Contexto 2026</a>
                 <a href="#herramientas" class="hover:text-brand transition">Herramientas</a>
                 <a href="blog.html" class="hover:text-brand transition">Blog</a>
                 <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-                <a href="#herramientas" class="bg-brand text-white px-5 py-2.5 rounded-full hover:bg-brand-dark transition shadow-sm">Empezar</a>
+                <a href="#herramientas" class="bg-brand text-white px-6 py-3 rounded-full hover:bg-brand-dark transition shadow-md text-xs uppercase tracking-widest font-bold">Empezar</a>
             </div>
+            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu" class="w-6 h-6"></i></button>
         </div>
     </nav>
 
-    <header class="relative bg-slate-50 border-b border-slate-100 overflow-hidden py-24 md:py-32">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <header class="relative bg-brand-light/50 border-b border-slate-100 overflow-hidden bg-grid-slate">
+        <div class="max-w-7xl mx-auto px-6 py-28 md:py-36 grid md:grid-cols-2 gap-16 items-center relative z-10">
             <div>
-                <span class="inline-flex items-center gap-2 bg-brand-light text-brand text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest border border-brand/10">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i> Actualizado BOE 2026
+                <span class="inline-flex items-center gap-2 bg-white text-brand text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest border border-slate-100 shadow-inner">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-accent"></i> Inteligencia Energética BOE 2026
                 </span>
-                <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-slate-950 leading-[0.95] mb-6">Optimiza tu hogar. <span class="text-brand">Maximiza tu ahorro.</span></h2>
-                <p class="text-xl text-slate-600 mb-10 max-w-xl font-medium">Accede a calculadoras inteligentes para reducir tus facturas y aprovechar deducciones fiscales en España.</p>
-                <div class="flex gap-4"><a href="#herramientas" class="bg-brand text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-brand-dark transition">Ver Herramientas</a></div>
-            </div>
-            <div class="relative bg-white p-8 rounded-3xl shadow-2xl border border-slate-100">
-                <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-100">
-                    <div class="bg-blue-100 text-brand p-4 rounded-2xl"><i data-lucide="trending-down" class="w-8 h-8"></i></div>
-                    <div><p class="text-sm font-semibold text-slate-500">Ahorro Medio</p><p class="text-4xl font-extrabold text-slate-950">1.250€ / año</p></div>
+                <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-slate-950 leading-[0.95] mb-8">
+                    Domina tu factura eléctrica. <span class="text-brand">Sin sorpresas.</span>
+                </h2>
+                <p class="text-xl text-slate-600 mb-12 max-w-xl font-medium leading-relaxed">
+                    Portal de utilidad pública con herramientas de precisión gratuitas para auditar tu consumo, calcular deducciones fiscales IRPF y simular tu ahorro solar real en España.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#herramientas" class="inline-flex items-center gap-2.5 bg-brand text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-lg hover:bg-brand-dark hover:-translate-y-0.5 transition-all">
+                        Auditar mi Ahorro <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#contexto" class="inline-flex items-center gap-2.5 bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold text-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition">
+                        ¿Por qué ahora?
+                    </a>
                 </div>
-                <div class="space-y-4"><div class="h-4 bg-slate-100 rounded-full w-full"></div><div class="h-4 bg-brand rounded-full w-1/2"></div></div>
+            </div>
+            <div class="relative flex justify-center items-center">
+                <div class="bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 w-full max-w-lg relative z-10 transform rotate-1">
+                    <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-100">
+                        <div class="bg-brand-light text-brand p-4 rounded-2xl"><i data-lucide="trending-down" class="w-8 h-8"></i></div>
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Ahorro Combinado Potencial 2026</p>
+                            <p class="text-5xl font-extrabold tracking-tighter text-slate-950">1.480€ <span class="text-2xl text-slate-400">/año</span></p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center text-sm font-medium"><span class="text-slate-500">Deducción IRPF (Media)</span><span class="text-brand font-bold">+ 820€</span></div>
+                        <div class="h-3 bg-slate-100 rounded-full w-full"><div class="h-3 bg-brand rounded-full w-full"></div></div>
+                        <div class="flex justify-between items-center text-sm font-medium"><span class="text-slate-500">Ahorro Factura Solar (Media)</span><span class="text-brand font-bold">+ 660€</span></div>
+                        <div class="h-3 bg-slate-100 rounded-full w-full"><div class="h-3 bg-brand-accent rounded-full w-3/4"></div></div>
+                    </div>
+                </div>
+                <div class="absolute -z-10 w-full h-full bg-gradient-to-r from-brand/20 to-brand-accent/20 rounded-full blur-3xl opacity-60"></div>
             </div>
         </div>
     </header>
 
-    <main id="herramientas" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
-                <div class="bg-slate-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-light group-hover:text-brand transition"><i data-lucide="calculator" class="w-8 h-8"></i></div>
-                <h4 class="text-2xl font-bold mb-3 tracking-tight">Calculadora IRPF</h4>
-                <p class="text-slate-600 mb-8 font-medium">Calcula tu devolución por reformas de eficiencia energética este año.</p>
-                <a href="calculadora-irpf.html" class="font-bold text-brand flex items-center gap-2">Abrir herramienta <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+    <section id="contexto" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-brand-accent font-bold text-sm uppercase tracking-widest mb-2 block">La Nueva Realidad Energética</span>
+                <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-950 mb-6">¿Por qué es crucial auditar tu energía en 2026?</h3>
+                <p class="text-lg text-slate-600 font-medium leading-relaxed">Tras años de volatilidad, el mercado eléctrico español en 2026 presenta oportunidades fiscales e tecnológicas únicas que la mayoría de hogares desconoce. Ya no es opcional: optimizar es una necesidad financiera.</p>
             </div>
-            <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
-                <div class="bg-slate-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-light group-hover:text-brand transition"><i data-lucide="sun" class="w-8 h-8"></i></div>
-                <h4 class="text-2xl font-bold mb-3 tracking-tight">Simulador Solar</h4>
-                <p class="text-slate-600 mb-8 font-medium">Calcula cuántas placas necesitas y cuánto dinero ahorrarás al mes.</p>
-                <a href="simulador-solar.html" class="font-bold text-brand flex items-center gap-2">Calcular ahora <i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center flex flex-col items-center">
+                    <div class="text-brand-accent mb-6"><i data-lucide="bar-chart-3" class="w-12 h-12"></i></div>
+                    <h5 class="text-xl font-bold mb-3">Precios Estructuralmente Altos</h5>
+                    <p class="text-slate-600 text-sm font-medium flex-grow">A pesar de la estabilidad, la tarifa base sigue siendo elevada. Cada kWh desperdiciado pesa más en la economía doméstica.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center flex flex-col items-center">
+                    <div class="text-brand-accent mb-6"><i data-lucide="scale" class="w-12 h-12"></i></div>
+                    <h5 class="text-xl font-bold mb-3">Nuevas Ayudas BOE 2026</h5>
+                    <p class="text-slate-600 text-sm font-medium flex-grow">El Gobierno ha renovado los tramos de deducción IRPF (20%, 40%, 60%) para reformas de eficiencia. No reclamarlas es perder dinero.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 text-center flex flex-col items-center">
+                    <div class="text-brand-accent mb-6"><i data-lucide="leaf" class="w-12 h-12"></i></div>
+                    <h5 class="text-xl font-bold mb-3">Responsabilidad Climática</h5>
+                    <p class="text-slate-600 text-sm font-medium flex-grow">Reducir tu consumo no solo alivia tu bolsillo, es la acción directa más potente para un hogar sostenible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="herramientas" class="py-24 md:py-32 bg-slate-50 bg-grid-slate border-t border-slate-100 rounded-t-[3rem]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-xl mb-16">
+                <span class="text-brand font-bold text-sm uppercase tracking-widest mb-2 block">Utilidades Integrales</span>
+                <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-950 mb-4">Herramientas de Precisión</h3>
+                <p class="text-lg text-slate-600 font-medium">Soluciones interactivas gratuitas basadas en normativas actualizadas y datos reales de IDAE.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl hover:border-brand-light transition-all group flex flex-col h-full relative overflow-hidden">
+                    <div class="bg-slate-100 w-16 h-16 rounded-2xl flex items-center justify-center text-slate-500 mb-8 group-hover:bg-brand-light group-hover:text-brand transition-colors"><i data-lucide="calculator" class="w-8 h-8"></i></div>
+                    <h4 class="text-2xl font-bold mb-3 tracking-tight text-slate-950">Calculadora IRPF Energética</h4>
+                    <p class="text-slate-600 mb-10 font-medium flex-grow">Calcula exactamente cuánto te devolverá Hacienda por tus reformas de eficiencia energética según el BOE de 2026.</p>
+                    <a href="calculadora-irpf.html" class="inline-flex items-center gap-2 font-bold text-brand group-hover:text-brand-dark transition-colors">Abrir herramienta <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i></a>
+                    <div class="absolute -right-6 -top-6 text-brand-light opacity-30"><i data-lucide="euro" class="w-24 h-24"></i></div>
+                </div>
+                
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-2xl hover:border-brand-light transition-all group flex flex-col h-full relative overflow-hidden">
+                    <div class="bg-slate-100 w-16 h-16 rounded-2xl flex items-center justify-center text-slate-500 mb-8 group-hover:bg-yellow-50 group-hover:text-yellow-600 transition-colors"><i data-lucide="sun" class="w-8 h-8"></i></div>
+                    <h4 class="text-2xl font-bold mb-3 tracking-tight text-slate-950">Simulador de Ahorro Solar</h4>
+                    <p class="text-slate-600 mb-10 font-medium flex-grow">Calcula cuántas placas necesitas, el coste estimado de la instalación y cuánto reducirás tu factura mensual de luz.</p>
+                    <a href="simulador-solar.html" class="inline-flex items-center gap-2 font-bold text-brand group-hover:text-brand-dark transition-colors">Calcular ahora <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i></a>
+                    <div class="absolute -right-6 -top-6 text-yellow-50 opacity-50"><i data-lucide="zap" class="w-24 h-24"></i></div>
+                </div>
+
+                <div class="bg-slate-100/50 p-10 rounded-3xl border-2 border-dashed border-slate-200 flex flex-col justify-center items-center text-center opacity-60">
+                    <div class="text-slate-300 mb-6"><i data-lucide="droplets" class="w-12 h-12"></i></div>
+                    <p class="font-bold text-slate-400 italic text-xl mb-2">Monitor de Agua</p>
+                    <p class="text-slate-400 text-sm font-medium">Próximamente: Herramientas para reducir el consumo hídrico.</p>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="bg-slate-50 py-16 border-t border-slate-100 mt-20">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div><h1 class="text-xl font-bold text-slate-950 mb-4 tracking-tighter">TuAhorroEficiente</h1><p>Portal independiente para la transición energética.</p></div>
-            <div class="grid grid-cols-2 gap-8 md:col-span-2">
-                <div><h6 class="font-bold text-slate-900 mb-4 uppercase text-xs">Navegación</h6>
-                    <ul class="space-y-2 text-slate-500"><li><a href="blog.html">Blog</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+    <section id="como-funciona" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-20">
+                <span class="text-brand text-sm font-bold uppercase tracking-widest mb-2 block">Proceso Sencillo</span>
+                <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-950">Tu Ruta Hacia el Ahorro</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black mb-8 border-4 border-white shadow-xl">1</div>
+                    <h5 class="text-xl font-bold mb-3 text-slate-950">Selecciona tu Herramienta</h5>
+                    <p class="text-slate-600 font-medium text-smleading-relaxed">Elige la calculadora que se adapte a tu necesidad fiscal o energética actual.</p>
                 </div>
-                <div><h6 class="font-bold text-slate-900 mb-4 uppercase text-xs">Legal</h6>
-                    <ul class="space-y-2 text-slate-500"><li><a href="aviso-legal.html">Aviso Legal</a></li><li><a href="privacidad.html">Privacidad</a></li><li><a href="cookies.html">Cookies</a></li></ul>
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black mb-8 border-4 border-white shadow-xl">2</div>
+                    <h5 class="text-xl font-bold mb-3 text-slate-950">Introduce tus Datos</h5>
+                    <p class="text-slate-600 font-medium text-sm leading-relaxed">Rellena los campos con información de tus facturas o certificados oficiales.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand text-white w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black mb-8 border-4 border-white shadow-xl">3</div>
+                    <h5 class="text-xl font-bold mb-3 text-slate-950">Obtén Resultados</h5>
+                    <p class="text-slate-600 font-medium text-sm leading-relaxed">Visualiza al instante tu ahorro estimado y los pasos a seguir.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="blog-home" class="py-24 md:py-32 bg-slate-50 border-t border-slate-100 rounded-t-[3rem]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-16 gap-4">
+                <div class="max-w-xl">
+                    <span class="text-brand font-bold text-sm uppercase tracking-widest mb-2 block">Inteligencia Actualizada</span>
+                    <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-slate-950">Últimas Guías de Ahorro</h3>
+                </div>
+                <a href="blog.html" class="inline-flex items-center gap-2.5 bg-white text-slate-900 px-6 py-3 rounded-full font-bold text-sm shadow-sm border border-slate-200 hover:bg-slate-50 transition flex-shrink-0">
+                    Ver todo el Blog <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition-all flex flex-col group">
+                    <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Declaración de IRPF y ahorro energético 2026">
+                    </div>
+                    <span class="text-brand-accent font-bold text-xs uppercase tracking-widest mb-3 block">Fiscalidad 2026</span>
+                    <h4 class="text-xl font-bold mb-3 tracking-tight text-slate-950 flex-grow leading-snug group-hover:text-brand transition-colors">
+                        <a href="guia-deduccion-irpf-2026.html">Guía completa para reclamar tu deducción IRPF por obras de eficiencia energética</a>
+                    </h4>
+                    <p class="text-slate-500 text-sm mb-6 line-clamp-2">Todo lo que necesitas saber sobre los certificados energéticos y los tramos de la Agencia Tributaria en 2026.</p>
+                    <a href="guia-deduccion-irpf-2026.html" class="inline-flex items-center gap-2 font-bold text-sm text-brand">Leer guía técnica <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></a>
+                </article>
+
+                <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition-all flex flex-col group">
+                    <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1508514177221-18d162b69429?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Paneles solares instalados en tejado residencial">
+                    </div>
+                    <span class="text-yellow-600 font-bold text-xs uppercase tracking-widest mb-3 block">Autoconsumo</span>
+                    <h4 class="text-xl font-bold mb-3 tracking-tight text-slate-950 flex-grow leading-snug">
+                        Simulación Solar: Cómo entender tu presupuesto y el retorno real de inversión
+                    </h4>
+                    <p class="text-slate-500 text-sm mb-6 line-clamp-2">Analizamos cómo influye la ubicación geográfica y la orientación de tu tejado en tu ahorro mensual con placas solares.</p>
+                    <span class="text-slate-400 text-sm italic font-medium">Próximamente</span>
+                </article>
+
+                <article class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-lg transition-all flex flex-col group">
+                    <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden border border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1599056377755-905b630f9a90?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Luz encendida en salón moderno y acogedor">
+                    </div>
+                    <span class="text-slate-500 font-bold text-xs uppercase tracking-widest mb-3 block">Factura Eléctrica</span>
+                    <h4 class="text-xl font-bold mb-3 tracking-tight text-slate-950 flex-grow leading-snug">
+                        5 Trucos avalados por IDAE para reducir tu factura de luz sin cambiar de hábitos
+                    </h4>
+                    <p class="text-slate-500 text-sm mb-6 line-clamp-2">Ajustes sencillos en tu potencia contratada y el uso inteligente del 'standby' pueden ahorrarte más de 100€ al año.</p>
+                    <span class="text-slate-400 text-sm italic font-medium">Próximamente</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 mt-0rounded-none relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div>
+                <a href="#" class="flex items-center gap-2 mb-4 group">
+                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h1 class="text-xl font-extrabold tracking-tighter text-white">TuAhorroEficiente</h1>
+                </a>
+                <p class="font-medium max-w-sm">Portal independiente para la transición energética en España. Datos actualizados según normativas oficiales de 2026.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 md:col-span-2">
+                <div>
+                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Utilidades</h6>
+                    <ul class="space-y-2.5 font-medium text-slate-300">
+                        <li><a href="calculadora-irpf.html" class="hover:text-brand-accent transition-colors">Calculadora IRPF</a></li>
+                        <li><a href="simulador-solar.html" class="hover:text-brand-accent transition-colors">Simulador Solar</a></li>
+                        <li><span class="opacity-50">Monitor Agua (Pronto)</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Información & Legal</h6>
+                    <ul class="space-y-2.5 font-medium text-slate-300">
+                        <li><a href="blog.html" class="hover:text-brand-accent transition-colors">Blog de Ahorro</a></li>
+                        <li><a href="contacto.html" class="hover:text-brand-accent transition-colors">Contacto</a></li>
+                        <li><a href="aviso-legal.html" class="hover:text-brand-accent transition-colors">Aviso Legal</a></li>
+                        <li><a href="privacidad.html" class="hover:text-brand-accent transition-colors">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 text-center mt-16 pt-8 border-t border-slate-800">
+            <p class="font-bold">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE</p>
         </div>
     </footer>
 
-    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:max-w-md bg-white rounded-3xl shadow-2xl border p-6 z-[100] transform translate-y-20 opacity-0 transition-all duration-700 pointer-events-none">
-        <div class="flex items-start gap-4">
-            <div class="bg-brand-light text-brand p-3 rounded-2xl"><i data-lucide="cookie" class="w-6 h-6"></i></div>
-            <div><h5 class="font-bold mb-1">Tu privacidad nos importa</h5><p class="text-xs text-slate-500 mb-4">Usamos cookies para analizar tu navegación y mejorar el ahorro.</p>
-                <div class="flex gap-3"><button onclick="acceptCookies()" class="flex-1 bg-brand text-white text-xs font-bold py-3 rounded-xl">Aceptar</button><a href="cookies.html" class="flex-1 bg-slate-50 text-slate-600 text-xs font-bold py-3 rounded-xl text-center">Info</a></div>
-            </div>
-        </div>
-    </div>
     <script>
-        lucide.createIcons();
-        window.onload = function() { if (!localStorage.getItem('cookies-accepted')) { document.getElementById('cookie-banner').classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none'); } };
-        function acceptCookies() { localStorage.setItem('cookies-accepted', 'true'); document.getElementById('cookie-banner').classList.add('translate-y-20', 'opacity-0', 'pointer-events-none'); }
+      lucide.createIcons();
     </script>
 </body>
 </html>
