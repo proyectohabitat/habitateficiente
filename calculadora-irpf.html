@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Deducción IRPF 2026 | Tu Ahorro Eficiente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .brand-blue { color: #01488e; }
+        .bg-brand-blue { background-color: #01488e; }
+    </style>
+</head>
+<body class="bg-gray-50 py-10 px-6">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+        <div class="mb-6 text-center">
+            <h1 class="text-3xl font-black brand-blue mb-2 italic">CALCULADORA IRPF</h1>
+            <p class="text-gray-400 font-bold uppercase tracking-tighter text-sm">Mejora de Eficiencia Energética 2026</p>
+        </div>
+
+        <div class="space-y-6">
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">Inversión total (€)</label>
+                <input type="number" id="inversion" placeholder="Ej: 5000" class="w-full p-4 border-2 border-gray-100 rounded-xl focus:border-blue-500 outline-none transition text-xl font-bold">
+            </div>
+
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">Tipo de deducción (según certificado)</label>
+                <select id="tipo" class="w-full p-4 border-2 border-gray-100 rounded-xl focus:border-blue-500 outline-none transition bg-white font-medium">
+                    <option value="0.20">Reducción demanda calefacción (20%)</option>
+                    <option value="0.40">Reducción consumo energía primaria (40%)</option>
+                    <option value="0.60">Rehabilitación energética edificio (60%)</option>
+                </select>
+            </div>
+
+            <button onclick="calcular()" class="w-full bg-brand-blue text-white py-5 rounded-2xl font-black text-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all uppercase tracking-widest">Calcular mi ahorro</button>
+
+            <div id="resultado" class="hidden mt-8 p-6 bg-blue-50 rounded-2xl border-2 border-blue-100 text-center">
+                <p class="text-blue-600 font-bold uppercase text-xs mb-1">Tu devolución estimada es de:</p>
+                <p id="cuantía" class="text-5xl font-black brand-blue">0,00€</p>
+                <p class="text-xs text-gray-400 mt-4 italic">*Cálculo basado en los límites máximos estatales del BOE.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            const inv = document.getElementById('inversion').value;
+            const porcentaje = document.getElementById('tipo').value;
+            const resDiv = document.getElementById('resultado');
+            
+            if(inv > 0) {
+                let ahorro = inv * porcentaje;
+                // Límites máximos según ley
+                if(porcentaje == "0.20" || porcentaje == "0.40") {
+                    if(ahorro > 2000) ahorro = "2.000 (Máximo)";
+                    else ahorro = ahorro.toLocaleString() + "€";
+                } else {
+                    if(ahorro > 9000) ahorro = "9.000 (Máximo)";
+                    else ahorro = ahorro.toLocaleString() + "€";
+                }
+                
+                document.getElementById('cuantía').innerText = ahorro;
+                resDiv.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
