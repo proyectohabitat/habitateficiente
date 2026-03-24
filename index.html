@@ -218,5 +218,39 @@
     <script>
       lucide.createIcons();
     </script>
+
+    <div id="cookie-banner" class="fixed bottom-6 left-6 right-6 md:left-auto md:max-w-md bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 z-[100] transform translate-y-20 opacity-0 transition-all duration-700 pointer-events-none">
+        <div class="flex items-start gap-4">
+            <div class="bg-brand-light text-brand p-3 rounded-2xl">
+                <i data-lucide="cookie" class="w-6 h-6"></i>
+            </div>
+            <div>
+                <h5 class="font-bold text-slate-900 mb-1">Tu privacidad nos importa</h5>
+                <p class="text-xs text-slate-500 leading-relaxed mb-4">
+                    Usamos cookies propias y de terceros para analizar tu navegación y mostrarte publicidad relacionada con tus preferencias de ahorro.
+                </p>
+                <div class="flex gap-3">
+                    <button onclick="acceptCookies()" class="flex-1 bg-brand text-white text-xs font-bold py-3 rounded-xl hover:bg-brand-dark transition">Aceptar todas</button>
+                    <a href="cookies.html" class="flex-1 bg-slate-50 text-slate-600 text-xs font-bold py-3 rounded-xl border border-slate-100 text-center hover:bg-slate-100 transition">Más info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lógica del Banner de Cookies
+        window.onload = function() {
+            if (!localStorage.getItem('cookies-accepted')) {
+                const banner = document.getElementById('cookie-banner');
+                banner.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }
+        };
+
+        function acceptCookies() {
+            localStorage.setItem('cookies-accepted', 'true');
+            const banner = document.getElementById('cookie-banner');
+            banner.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+        }
+    </script>
 </body>
 </html>
