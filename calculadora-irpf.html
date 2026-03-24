@@ -3,64 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Deducción IRPF 2026 | Tu Ahorro Eficiente</title>
+    <title>Calculadora IRPF 2026 | Tu Ahorro Eficiente</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .brand-blue { color: #01488e; }
-        .bg-brand-blue { background-color: #01488e; }
-    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#01488e',
+                            dark: '#003366',
+                            light: '#e6f0fa',
+                        }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-gray-50 py-10 px-6">
-    <div class="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
-        <div class="mb-6 text-center">
-            <h1 class="text-3xl font-black brand-blue mb-2 italic">CALCULADORA IRPF</h1>
-            <p class="text-gray-400 font-bold uppercase tracking-tighter text-sm">Mejora de Eficiencia Energética 2026</p>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-slate-100 py-4">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-brand text-white p-2 rounded-lg group-hover:bg-brand-dark transition">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tighter">TuAhorro<span class="text-brand">Eficiente</span></span>
+            </a>
+            <a href="index.html" class="text-sm font-bold text-slate-500 hover:text-brand transition flex items-center gap-1">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i> Volver al inicio
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-12 md:py-20 px-6">
+        <div class="max-w-2xl mx-auto text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tighter text-slate-950 mb-4">Calculadora Deducción IRPF</h1>
+            <p class="text-slate-500 font-medium">Calcula el ahorro fiscal por obras de mejora de la eficiencia energética en viviendas (BOE 2026).</p>
         </div>
 
-        <div class="space-y-6">
-            <div>
-                <label class="block text-sm font-bold text-gray-700 mb-2">Inversión total (€)</label>
-                <input type="number" id="inversion" placeholder="Ej: 5000" class="w-full p-4 border-2 border-gray-100 rounded-xl focus:border-blue-500 outline-none transition text-xl font-bold">
-            </div>
+        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 overflow-hidden">
+            <div class="p-8 md:p-12">
+                <div class="space-y-8">
+                    <div>
+                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Inversión Realizada (€)</label>
+                        <div class="relative">
+                            <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-xl">€</span>
+                            <input type="number" id="inversion" placeholder="0.00" 
+                                class="w-full pl-10 pr-4 py-5 bg-slate-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all text-2xl font-extrabold text-slate-900">
+                        </div>
+                    </div>
 
-            <div>
-                <label class="block text-sm font-bold text-gray-700 mb-2">Tipo de deducción (según certificado)</label>
-                <select id="tipo" class="w-full p-4 border-2 border-gray-100 rounded-xl focus:border-blue-500 outline-none transition bg-white font-medium">
-                    <option value="0.20">Reducción demanda calefacción (20%)</option>
-                    <option value="0.40">Reducción consumo energía primaria (40%)</option>
-                    <option value="0.60">Rehabilitación energética edificio (60%)</option>
-                </select>
-            </div>
+                    <div>
+                        <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-3 text-left">Tipo de Deducción</label>
+                        <select id="tipo" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-semibold text-slate-700 appearance-none cursor-pointer">
+                            <option value="0.20">Reducción demanda calefacción (20%)</option>
+                            <option value="0.40">Reducción consumo energía primaria (40%)</option>
+                            <option value="0.60">Rehabilitación energética edificio (60%)</option>
+                        </select>
+                        <p class="mt-2 text-xs text-slate-400 italic text-left">*Verifica este dato en tu Certificado de Eficiencia Energética.</p>
+                    </div>
 
-            <button onclick="calcular()" class="w-full bg-brand-blue text-white py-5 rounded-2xl font-black text-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all uppercase tracking-widest">Calcular mi ahorro</button>
+                    <button onclick="calcular()" 
+                        class="w-full bg-brand text-white py-6 rounded-2xl font-extrabold text-lg shadow-xl shadow-brand/20 hover:bg-brand-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
+                        <i data-lucide="calculator" class="w-6 h-6"></i> CALCULAR MI AHORRO
+                    </button>
+                </div>
 
-            <div id="resultado" class="hidden mt-8 p-6 bg-blue-50 rounded-2xl border-2 border-blue-100 text-center">
-                <p class="text-blue-600 font-bold uppercase text-xs mb-1">Tu devolución estimada es de:</p>
-                <p id="cuantía" class="text-5xl font-black brand-blue">0,00€</p>
-                <p class="text-xs text-gray-400 mt-4 italic">*Cálculo basado en los límites máximos estatales del BOE.</p>
+                <div id="resultado" class="hidden mt-12 pt-12 border-t border-slate-100 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div class="bg-brand-light/50 p-8 rounded-[2rem] border border-brand/5 relative overflow-hidden text-center">
+                        <p class="text-brand font-bold uppercase tracking-widest text-xs mb-2">Devolución Estimada</p>
+                        <div id="cuantía" class="text-5xl md:text-6xl font-black text-brand tracking-tighter">0,00€</div>
+                        <div class="absolute -right-8 -bottom-8 opacity-5">
+                            <i data-lucide="trending-up" class="w-32 h-32"></i>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-sm text-slate-400 font-medium">Estimación basada en los límites estatales de 2026. Consulta con un asesor para tu caso específico.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="py-12 text-center text-slate-400 text-xs font-bold border-t border-slate-100 mt-12 uppercase tracking-widest">
+        &copy; 2026 Tu Ahorro Eficiente - Tecnología para la sostenibilidad
+    </footer>
 
     <script>
+        // Inicializar iconos
+        lucide.createIcons();
+
         function calcular() {
-            const inv = document.getElementById('inversion').value;
-            const porcentaje = document.getElementById('tipo').value;
+            const inv = parseFloat(document.getElementById('inversion').value);
+            const porcentaje = parseFloat(document.getElementById('tipo').value);
             const resDiv = document.getElementById('resultado');
             
             if(inv > 0) {
                 let ahorro = inv * porcentaje;
-                // Límites máximos según ley
-                if(porcentaje == "0.20" || porcentaje == "0.40") {
-                    if(ahorro > 2000) ahorro = "2.000 (Máximo)";
-                    else ahorro = ahorro.toLocaleString() + "€";
+                
+                // Límites máximos según ley española (Simplificado)
+                if(porcentaje == 0.20 || porcentaje == 0.40) {
+                    if(ahorro > 2000) ahorro = 2000;
                 } else {
-                    if(ahorro > 9000) ahorro = "9.000 (Máximo)";
-                    else ahorro = ahorro.toLocaleString() + "€";
+                    if(ahorro > 9000) ahorro = 9000;
                 }
                 
-                document.getElementById('cuantía').innerText = ahorro;
+                document.getElementById('cuantía').innerText = ahorro.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
                 resDiv.classList.remove('hidden');
+                
+                // Efecto de scroll suave al resultado en móviles
+                setTimeout(() => {
+                    resDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 100);
             }
         }
     </script>
