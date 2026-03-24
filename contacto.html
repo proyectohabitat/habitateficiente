@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tu Ahorro Eficiente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#e6f0fa' } },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col">
+    <nav class="bg-white border-b border-slate-100 py-4">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-brand text-white p-2 rounded-lg transition"><i data-lucide="zap" class="w-5 h-5"></i></div>
+                <span class="text-xl font-extrabold tracking-tighter">TuAhorro<span class="text-brand">Eficiente</span></span>
+            </a>
+            <a href="index.html" class="text-sm font-bold text-slate-500 hover:text-brand transition flex items-center gap-1">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i> Volver al inicio
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-20 px-6">
+        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 p-10 md:p-16 text-center">
+            <div class="bg-brand-light text-brand w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <i data-lucide="mail" class="w-8 h-8"></i>
+            </div>
+            <h1 class="text-3xl font-black tracking-tight text-slate-950 mb-4">¿Hablamos?</h1>
+            <p class="text-slate-500 font-medium mb-10 text-lg">Si tienes dudas sobre las calculadoras o quieres colaborar, estamos al otro lado del teclado.</p>
+            
+            <a href="mailto:hola@tuahorroeficiente.es" class="block w-full bg-brand text-white py-6 rounded-2xl font-extrabold text-lg shadow-xl hover:bg-brand-dark hover:-translate-y-1 transition-all mb-4">
+                hola@tuahorroeficiente.es
+            </a>
+            <p class="text-xs text-slate-400 font-bold uppercase tracking-widest">Respuesta en menos de 24 horas</p>
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
