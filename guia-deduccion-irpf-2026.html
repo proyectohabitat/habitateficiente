@@ -1,110 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía Definitiva: Deducción IRPF por Eficiencia Energética (2026) | Tu Ahorro</title>
-    <meta name="description"
-        content="Aprende paso a paso cómo solicitar la deducción en tu declaración de la renta por cambiar ventanas, instalar placas solares o aerotermia.">
+    <meta name="description" content="Aprende paso a paso cómo solicitar la deducción en tu declaración de la renta por cambiar ventanas, instalar placas solares o aerotermia.">
     <link rel="canonical" href="https://tuahorroeficiente.es/guia-deduccion-irpf-2026.html">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Guía completa para reclamar tu deducción IRPF","author":{"@type":"Organization","name":"Tu Ahorro Eficiente"}}</script>
+    
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Guía completa para reclamar tu deducción IRPF",
+        "author": { "@type": "Organization", "name": "Tu Ahorro Eficiente" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tuahorroeficiente.es/"
+        },{
+          "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tuahorroeficiente.es/blog.html"
+        },{
+          "@type": "ListItem", "position": 3, "name": "Deducción IRPF 2026"
+        }]
+      }
+    ]
+    </script>
     <script>tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#002a5c', light: '#eaf4ff', accent: '#00b4d8' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }</script>
 </head>
-
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body class="bg-slate-50 text-slate-900 font-sans pb-20 md:pb-0">
 
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-100 py-4 shadow-sm transition-all">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 group">
-                <div
-                    class="bg-gradient-to-br from-brand to-brand-accent text-white p-2.5 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform">
-                    <i data-lucide="zap" class="w-6 h-6"></i></div>
-                <div class="flex flex-col"><span
-                        class="text-2xl font-black tracking-tighter text-slate-900 leading-none">TuAhorro<span
-                            class="text-brand">Eficiente</span></span><span
-                        class="text-[10px] uppercase font-bold text-slate-400 tracking-widest">Inteligencia
-                        Energética</span></div>
+                <div class="bg-gradient-to-br from-brand to-brand-accent text-white p-2.5 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                <div class="flex flex-col"><span class="text-2xl font-black tracking-tighter text-slate-900 leading-none">TuAhorro<span class="text-brand">Eficiente</span></span><span class="text-[10px] uppercase font-bold text-slate-400 tracking-widest">Inteligencia Energética</span></div>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
                 <a href="index.html#contexto" class="hover:text-brand transition-colors">El Contexto 2026</a>
                 <a href="index.html#herramientas" class="hover:text-brand transition-colors">Herramientas</a>
                 <a href="blog.html" class="text-brand border-b-2 border-brand pb-1">Blog & Guías</a>
                 <a href="contacto.html" class="hover:text-brand transition-colors">Contacto</a>
-                <a href="index.html#herramientas"
-                    class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar
-                    Ahorro</a>
+                <a href="index.html#herramientas" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar Ahorro</a>
             </div>
-            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu"
-                    class="w-6 h-6"></i></button>
+            <button id="mobile-menu-button" class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><span id="icon-menu" class="block"><i data-lucide="menu" class="w-6 h-6"></i></span><span id="icon-close" class="hidden"><i data-lucide="x" class="w-6 h-6"></i></span></button>
+        </div>
+        <div id="mobile-menu" class="hidden absolute top-[100%] left-0 w-full bg-white border-b border-slate-100 shadow-xl transition-all z-40">
+            <div class="flex flex-col px-6 py-6 gap-6 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="mobile-link hover:text-brand">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="mobile-link hover:text-brand">Herramientas</a>
+                <a href="blog.html" class="mobile-link hover:text-brand">Blog & Guías</a>
+                <a href="contacto.html" class="mobile-link hover:text-brand">Contacto</a>
+                <a href="index.html#herramientas" class="mobile-link bg-slate-900 text-white px-6 py-4 rounded-xl text-center hover:bg-brand">Auditar Ahorro</a>
+            </div>
         </div>
     </nav>
 
     <main class="py-16 md:py-24 px-6">
         <article class="max-w-4xl mx-auto bg-white rounded-[3rem] shadow-xl border border-slate-100 overflow-hidden">
             <header class="p-10 md:p-16 pb-8 border-b border-slate-100 bg-slate-900 text-white relative">
-                <div
-                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80')] opacity-20 bg-cover bg-center">
-                </div>
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80')] opacity-20 bg-cover bg-center"></div>
                 <div class="relative z-10">
                     <div class="flex items-center gap-3 mb-6">
-                        <span
-                            class="bg-brand text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md">Fiscalidad</span>
-                        <span class="text-slate-400 text-sm font-medium"><i data-lucide="calendar"
-                                class="w-4 h-4 inline mr-1"></i> Actualizado 2026</span>
+                        <span class="bg-brand text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-md">Fiscalidad</span>
+                        <span class="text-slate-400 text-sm font-medium"><i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Actualizado 2026</span>
                     </div>
-                    <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6">Guía completa para
-                        reclamar tu deducción IRPF por obras de eficiencia energética</h1>
-                    <p class="text-xl text-slate-300 font-medium">No dejes que Hacienda se quede con un dinero que te
-                        pertenece por ley. Descubre los errores más comunes y cómo asegurar el 40% de devolución.</p>
+                    <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6">Guía completa para reclamar tu deducción IRPF por obras de eficiencia energética</h1>
+                    <p class="text-xl text-slate-300 font-medium">No dejes que Hacienda se quede con un dinero que te pertenece por ley. Descubre los errores más comunes y cómo asegurar el 40% de devolución.</p>
                 </div>
             </header>
 
             <div class="p-10 md:p-16 prose prose-lg prose-slate max-w-none">
-                <p>Si durante este año has instalado <strong>aerotermia, placas solares, o has cambiado las
-                        ventanas</strong> de tu casa, es muy probable que tengas derecho a una importante bonificación
-                    en tu próxima declaración de la Renta.</p>
+                <p>Si durante este año has instalado <strong>aerotermia, placas solares, o has cambiado las ventanas</strong> de tu casa, es muy probable que tengas derecho a una importante bonificación en tu próxima declaración de la Renta.</p>
 
                 <h2>Los 3 Escenarios de Deducción (Explicados)</h2>
                 <p>La normativa diferencia tres tramos clave según el impacto de la obra en la vivienda:</p>
 
                 <div class="bg-brand-light p-6 rounded-2xl border border-brand/20 my-8">
                     <h3 class="text-brand mt-0 mb-2">1. Deducción del 20% (Cambios básicos)</h3>
-                    <p class="text-sm m-0">Aplica si las obras reducen la demanda de calefacción y refrigeración al
-                        menos un <strong>7%</strong>. Ejemplo típico: Cambio de ventanas estándar a modelos con rotura
-                        de puente térmico en una fachada. El límite de base es 5.000€.</p>
+                    <p class="text-sm m-0">Aplica si las obras reducen la demanda de calefacción y refrigeración al menos un <strong>7%</strong>. Ejemplo típico: Cambio de ventanas estándar a modelos con rotura de puente térmico en una fachada. El límite de base es 5.000€.</p>
                 </div>
 
                 <div class="bg-brand-light p-6 rounded-2xl border border-brand/20 my-8">
                     <h3 class="text-brand mt-0 mb-2">2. Deducción del 40% (El más habitual)</h3>
-                    <p class="text-sm m-0">El "sweet spot" de las ayudas. Debes reducir en un <strong>30% el indicador
-                            de consumo de energía primaria no renovable</strong>, o conseguir que la calificación
-                        energética de la vivienda sea «A» o «B». Ejemplo típico: Instalación de paneles solares o
-                        aerotermia. La base máxima sube a 7.500€.</p>
+                    <p class="text-sm m-0">El "sweet spot" de las ayudas. Debes reducir en un <strong>30% el indicador de consumo de energía primaria no renovable</strong>, o conseguir que la calificación energética de la vivienda sea «A» o «B». Ejemplo típico: Instalación de paneles solares o aerotermia. La base máxima sube a 7.500€.</p>
                 </div>
 
                 <h2>El trámite trampa: Los Certificados Energéticos</h2>
-                <p>El error que hace perder miles de euros a los contribuyentes es la gestión de los
-                    <strong>Certificados de Eficiencia Energética (CEE)</strong>. Hacienda no acepta facturas como
-                    prueba de la mejora; exige la validación de un técnico.</p>
+                <p>El error que hace perder miles de euros a los contribuyentes es la gestión de los <strong>Certificados de Eficiencia Energética (CEE)</strong>. Hacienda no acepta facturas como prueba de la mejora; exige la validación de un técnico.</p>
                 <ol>
                     <li>Debes solicitar un CEE <strong>antes de que empiece la obra</strong>.</li>
                     <li>Debes solicitar un segundo CEE al finalizar la obra para demostrar la rebaja porcentual.</li>
                 </ol>
 
-                <div class="bg-slate-50 border-2 border-slate-100 p-8 rounded-3xl text-center mt-12">
+                <div class="bg-slate-50 border-2 border-slate-100 p-8 rounded-3xl text-center mt-12 hidden md:block">
                     <h3 class="text-2xl font-black mt-0 mb-4">¿Quieres saber tu cifra exacta en euros?</h3>
-                    <p class="mb-8">Usa nuestro algoritmo ajustado al BOE para descubrir la cantidad exacta que debes
-                        introducir en la casilla de tu Renta.</p>
-                    <a href="calculadora-irpf.html"
-                        class="inline-block bg-slate-900 text-white font-black uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-brand transition-colors shadow-lg">Ir
-                        a la Calculadora IRPF Gratis</a>
+                    <p class="mb-8">Usa nuestro algoritmo ajustado al BOE para descubrir la cantidad exacta que debes introducir en la casilla de tu Renta.</p>
+                    <a href="calculadora-irpf.html" class="inline-block bg-slate-900 text-white font-black uppercase tracking-widest text-sm px-8 py-4 rounded-xl hover:bg-brand transition-colors shadow-lg">Ir a la Calculadora IRPF Gratis</a>
                 </div>
             </div>
         </article>
@@ -113,65 +112,54 @@
     <footer class="bg-slate-950 pt-20 pb-10 text-slate-400 border-t border-slate-800 mt-10">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
             <div class="md:col-span-2">
-                <a href="index.html" class="flex items-center gap-2 mb-6 group">
-                    <div class="bg-brand text-white p-2 rounded-lg"><i data-lucide="zap" class="w-5 h-5"></i></div>
-                    <h2 class="text-2xl font-black text-white tracking-tighter">TuAhorroEficiente</h2>
-                </a>
-                <p class="font-medium text-slate-400 leading-relaxed max-w-sm mb-6">Construyendo el estándar de
-                    inteligencia financiera y energética para los hogares en España.</p>
-                <a href="mailto:proyectohabitateficiente@gmail.com"
-                    class="text-white font-bold hover:text-brand transition-colors">proyectohabitateficiente@gmail.com</a>
+                <a href="index.html" class="flex items-center gap-2 mb-6 group"><div class="bg-brand text-white p-2 rounded-lg"><i data-lucide="zap" class="w-5 h-5"></i></div><h2 class="text-2xl font-black text-white tracking-tighter">TuAhorroEficiente</h2></a>
+                <p class="font-medium text-slate-400 leading-relaxed max-w-sm mb-6">Construyendo el estándar de inteligencia financiera y energética para los hogares en España.</p>
+                <a href="mailto:proyectohabitateficiente@gmail.com" class="text-white font-bold hover:text-brand transition-colors">proyectohabitateficiente@gmail.com</a>
             </div>
             <div>
                 <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Herramientas</h3>
                 <ul class="space-y-4 font-medium">
-                    <li><a href="calculadora-irpf.html" class="hover:text-white transition-colors">Calculadora Deducción
-                            IRPF</a></li>
-                    <li><a href="simulador-solar.html" class="hover:text-white transition-colors">Simulador
-                            Autoconsumo</a></li>
-                    <li><a href="monitor-agua.html" class="hover:text-white transition-colors">Calculadora Hídrica</a>
-                    </li>
+                    <li><a href="calculadora-irpf.html" class="hover:text-white transition-colors">Calculadora Deducción IRPF</a></li>
+                    <li><a href="simulador-solar.html" class="hover:text-white transition-colors">Simulador Autoconsumo</a></li>
+                    <li><a href="monitor-agua.html" class="hover:text-white transition-colors">Calculadora Hídrica</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Legal & Empresa</h3>
                 <ul class="space-y-4 font-medium">
                     <li><a href="blog.html" class="hover:text-white transition-colors">Blog y Guías</a></li>
-                    <li><a href="aviso-legal.html" rel="nofollow" class="hover:text-white transition-colors">Aviso
-                            Legal</a></li>
-                    <li><a href="privacidad.html" rel="nofollow"
-                            class="hover:text-white transition-colors">Privacidad</a></li>
-                    <li><a href="cookies.html" rel="nofollow" class="hover:text-white transition-colors">Cookies</a>
-                    </li>
+                    <li><a href="aviso-legal.html" rel="nofollow" class="hover:text-white transition-colors">Aviso Legal</a></li>
+                    <li><a href="privacidad.html" rel="nofollow" class="hover:text-white transition-colors">Privacidad</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="cookies.html" rel="nofollow" class="hover:text-white transition-colors">Cookies</a></li>
                 </ul>
             </div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="font-bold text-xs uppercase tracking-widest">&copy; 2026 Tu Ahorro Eficiente</p>
             <p class="text-xs">Hecho en España para un futuro sostenible.</p>
         </div>
     </footer>
-    <script>
-        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
-        lucide.createIcons();
 
-        // 2. Lógica del Menú Móvil (A prueba de fallos)
+    <div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 p-4 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] z-50">
+        <a href="calculadora-irpf.html" class="flex items-center justify-center gap-2 w-full bg-brand text-white font-black uppercase tracking-widest text-xs px-4 py-4 rounded-xl shadow-lg">
+            <i data-lucide="calculator" class="w-5 h-5"></i> Simula tu Devolución Ahora
+        </a>
+    </div>
+
+    <script>
+        lucide.createIcons();
         const btnMenu = document.getElementById('mobile-menu-button');
         const menuContenedor = document.getElementById('mobile-menu');
         const iconMenu = document.getElementById('icon-menu');
         const iconClose = document.getElementById('icon-close');
         const mobileLinks = document.querySelectorAll('.mobile-link');
-
         if (btnMenu && menuContenedor) {
-            // Abrir/Cerrar menú al hacer clic en el botón
             btnMenu.addEventListener('click', () => {
                 menuContenedor.classList.toggle('hidden');
                 iconMenu.classList.toggle('hidden');
                 iconClose.classList.toggle('hidden');
             });
-
-            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     menuContenedor.classList.add('hidden');
@@ -182,5 +170,4 @@
         }
     </script>
 </body>
-
 </html>

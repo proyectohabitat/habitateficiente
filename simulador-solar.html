@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" class="scroll-smooth">
 <head>
     <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Solar 2026 | Calcula tu Ahorro en Placas Fotovoltaicas</title>
-    <meta name="description"
-        content="Simulador gratuito de placas solares. Calcula cuántos paneles necesitas, el coste de instalación y cuánto dinero ahorrarás al mes según tu ubicación en España.">
+    <meta name="description" content="Simulador gratuito de placas solares. Calcula cuántos paneles necesitas, el coste de instalación y cuánto dinero ahorrarás al mes según tu ubicación en España.">
+    <link rel="canonical" href="https://tuahorroeficiente.es/simulador-solar.html">
 
     <script type="application/ld+json">
     {
@@ -18,167 +17,175 @@
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
     }
     </script>
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#f0f7ff' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }</script>
+    <script>tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#002a5c', light: '#eaf4ff', accent: '#00b4d8' } }, fontFamily: { sans: ['Inter', 'sans-serif'] }, boxShadow: { 'glow': '0 0 20px rgba(1, 72, 142, 0.3)' } } } }</script>
+    <style>body { font-feature-settings: "ss01", "cv01"; text-rendering: optimizeLegibility; }</style>
 </head>
 
-<body class="bg-white text-slate-900 antialiased font-sans">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans flex flex-col min-h-screen">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2.5 rounded-xl group-hover:bg-brand-dark transition-colors">
-                    <i data-lucide="zap" class="w-6 h-6"></i>
-                </div>
-                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span
-                        class="text-brand">Eficiente</span></h1>
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-100 py-4 shadow-sm transition-all relative">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="bg-gradient-to-br from-brand to-brand-accent text-white p-2.5 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                <div class="flex flex-col"><span class="text-2xl font-black tracking-tighter text-slate-900 leading-none">TuAhorro<span class="text-brand">Eficiente</span></span><span class="text-[10px] uppercase font-bold text-slate-400 tracking-widest">Inteligencia Energética</span></div>
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html#contexto" class="hover:text-brand transition">El Contexto 2026</a>
-                <a href="#herramientas" class="hover:text-brand transition">Herramientas</a>
-                <a href="blog.html" class="hover:text-brand transition">Blog</a>
-                <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-                <a href="#herramientas"
-                    class="bg-brand text-white px-6 py-3 rounded-full hover:bg-brand-dark transition shadow-md text-xs uppercase tracking-widest font-bold">Empezar</a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="text-brand border-b-2 border-brand pb-1">Herramientas</a>
+                <a href="blog.html" class="hover:text-brand transition-colors">Blog & Guías</a>
+                <a href="contacto.html" class="hover:text-brand transition-colors">Contacto</a>
+                <a href="index.html#herramientas" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar Ahorro</a>
             </div>
-            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu"
-                    class="w-6 h-6"></i></button>
+
+            <button id="mobile-menu-button" aria-label="Abrir menú" class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg hover:bg-slate-50 transition-colors focus:outline-none">
+                <span id="icon-menu" class="block"><i data-lucide="menu" class="w-6 h-6"></i></span>
+                <span id="icon-close" class="hidden"><i data-lucide="x" class="w-6 h-6"></i></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-[100%] left-0 w-full bg-white border-b border-slate-100 shadow-xl transition-all z-40">
+            <div class="flex flex-col px-6 py-6 gap-6 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="mobile-link hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="mobile-link text-brand transition-colors">Herramientas</a>
+                <a href="blog.html" class="mobile-link hover:text-brand transition-colors">Blog & Guías</a>
+                <a href="contacto.html" class="mobile-link hover:text-brand transition-colors">Contacto</a>
+                <a href="index.html#herramientas" class="mobile-link bg-slate-900 text-white px-6 py-4 rounded-xl text-center hover:bg-brand transition-all shadow-md mt-2">Auditar Ahorro</a>
+            </div>
         </div>
     </nav>
 
-    <main class="py-16 px-6 bg-slate-50">
-        <div class="max-w-2xl mx-auto text-center mb-10">
-            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Simulador de <span class="text-brand">Autoconsumo
-                    Solar</span></h1>
-            <p class="text-slate-500 font-medium">Estima el retorno de tu inversión en placas fotovoltaicas en menos de
-                1 minuto.</p>
+    <main class="flex-grow py-16 md:py-24 px-6 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-50/50 via-slate-50 to-slate-50">
+        
+        <div class="max-w-3xl mx-auto text-center mb-12">
+            <span class="bg-yellow-100 text-yellow-700 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 inline-block shadow-sm">Calculadora de Rentabilidad</span>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 mb-6">Simulador de <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">Autoconsumo Solar</span></h1>
+            <p class="text-lg text-slate-500 font-medium">Estima el retorno de tu inversión en placas fotovoltaicas y descubre cuántos paneles necesitas en menos de 1 minuto.</p>
         </div>
 
-        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10 mb-16">
-            <div class="space-y-8 text-left">
-                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Gasto mensual
-                        luz promedio (€)</label><input type="number" id="gasto" placeholder="Ej: 100"
-                        class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none text-2xl font-bold transition-all text-left">
+        <div class="max-w-xl mx-auto bg-white rounded-[3rem] shadow-2xl border border-slate-100 p-8 md:p-12 mb-16 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-400/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            
+            <div class="space-y-8 relative z-10">
+                <div>
+                    <label class="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-widest mb-3"><i data-lucide="receipt" class="w-4 h-4 text-yellow-500"></i> Gasto mensual medio en luz (€)</label>
+                    <input type="number" id="gasto" placeholder="Ej: 120" class="w-full p-5 bg-slate-50 border-2 border-slate-100 focus:border-yellow-400 rounded-2xl outline-none text-2xl font-bold transition-all shadow-inner text-slate-900">
                 </div>
-                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 text-left">Zona
-                        Geográfica</label>
-                    <select id="zona"
-                        class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none font-semibold text-left">
-                        <option value="1.5">Sur de España / Canarias (Sol Máximo)</option>
-                        <option value="1.3">Centro / Levante (Sol Alto)</option>
-                        <option value="1.1">Norte de España (Sol Moderado)</option>
-                    </select>
+                <div>
+                    <label class="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-widest mb-3"><i data-lucide="map-pin" class="w-4 h-4 text-yellow-500"></i> Zona Geográfica (Horas de sol)</label>
+                    <div class="relative">
+                        <select id="zona" class="w-full p-5 bg-slate-50 border-2 border-slate-100 focus:border-yellow-400 rounded-2xl outline-none font-bold text-slate-700 appearance-none cursor-pointer">
+                            <option value="1.5">Sur de España / Canarias (Sol Máximo)</option>
+                            <option value="1.2">Centro / Levante (Sol Alto)</option>
+                            <option value="1.0">Norte de España (Sol Moderado)</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-slate-400"><i data-lucide="chevron-down" class="w-5 h-5"></i></div>
+                    </div>
                 </div>
-                <button onclick="calcularSolar()"
-                    class="w-full bg-brand text-white py-6 rounded-2xl font-black text-xl shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR
-                    MI POTENCIAL</button>
+                
+                <button onclick="calcularSolar()" class="w-full bg-slate-900 text-white py-6 rounded-2xl font-black text-xl shadow-lg hover:bg-yellow-500 transition-all transform hover:-translate-y-1">CALCULAR MI POTENCIAL</button>
             </div>
-            <div id="resultado-solar"
-                class="hidden mt-12 pt-12 border-t text-center animate-in fade-in slide-in-from-bottom-4">
-                <p class="text-brand font-bold uppercase text-xs mb-2">Ahorro anual estimado:</p>
-                <div id="ahorro-anual" class="text-6xl font-black text-brand tracking-tighter">0€</div>
-                <div class="grid grid-cols-2 gap-4 mt-8">
-                    <div class="bg-slate-50 p-4 rounded-2xl border">
-                        <p class="text-[10px] text-slate-400 font-bold uppercase">Placas sugeridas</p>
-                        <p id="placas" class="text-xl font-black">0</p>
+            
+            <div id="resultado-solar" class="hidden mt-12 pt-12 border-t border-slate-100 text-center animate-[fade-in_0.5s_ease-out]">
+                <p class="text-yellow-600 font-bold uppercase text-xs mb-2 tracking-widest">Ahorro anual estimado:</p>
+                <div id="ahorro-anual" class="text-6xl font-black text-slate-900 tracking-tighter mb-8">0€</div>
+                
+                <div class="grid grid-cols-2 gap-4 mb-10">
+                    <div class="bg-yellow-50 p-5 rounded-2xl border border-yellow-100">
+                        <i data-lucide="sun" class="w-6 h-6 text-yellow-600 mx-auto mb-2"></i>
+                        <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Placas sugeridas</p>
+                        <p id="placas" class="text-2xl font-black text-slate-900">0</p>
                     </div>
-                    <div class="bg-slate-50 p-4 rounded-2xl border">
-                        <p class="text-[10px] text-slate-400 font-bold uppercase">Amortización</p>
-                        <p id="años" class="text-xl font-black">0 años</p>
+                    <div class="bg-green-50 p-5 rounded-2xl border border-green-100">
+                        <i data-lucide="trending-down" class="w-6 h-6 text-green-600 mx-auto mb-2"></i>
+                        <p class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Amortización</p>
+                        <p id="años" class="text-2xl font-black text-slate-900">0 años</p>
                     </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-brand-light to-white border-2 border-brand/20 p-8 rounded-3xl relative overflow-hidden text-left shadow-sm">
+                    <div class="absolute top-0 right-0 -mt-2 -mr-8 bg-yellow-400 text-yellow-900 text-[10px] font-black uppercase tracking-widest px-10 py-1.5 transform rotate-45 shadow-md">Recomendado</div>
+                    <h4 class="font-black text-2xl text-slate-900 mb-3 flex items-center gap-2"><i data-lucide="check-circle-2" class="text-brand w-6 h-6"></i> Da el paso hoy</h4>
+                    <p class="text-slate-600 font-medium mb-6 text-sm leading-relaxed">Te conectamos de forma gratuita con instaladores homologados en tu zona para confirmarte este ahorro con un presupuesto cerrado oficial.</p>
+                    <a href="mailto:proyectohabitateficiente@gmail.com?subject=Solicitud%20Estudio%20Solar%20Gratuito" class="inline-flex items-center justify-center gap-2 w-full bg-brand text-white px-6 py-4 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-brand-dark transition-colors shadow-lg transform hover:-translate-y-1">
+                        Solicitar Estudio Gratuito <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <p class="text-[10px] text-slate-400 mt-4 font-bold uppercase tracking-widest text-center flex items-center justify-center gap-1"><i data-lucide="shield" class="w-3 h-3"></i> 100% Gratis y sin compromiso</p>
                 </div>
             </div>
         </div>
 
-        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left">
-            <h2 class="text-3xl font-black italic mb-6">Guía: ¿Es rentable poner placas solares en 2026?</h2>
-            <p class="text-slate-600 font-medium leading-relaxed">Con los precios actuales de la tecnología fotovoltaica
-                y la madurez de la <strong>compensación de excedentes</strong> en España, el periodo de amortización ha
-                bajado de los 6 años en la mayoría de regiones.</p>
+        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left bg-white p-10 md:p-16 rounded-[3rem] shadow-sm border border-slate-100">
+            <h2 class="text-3xl font-black tracking-tight mb-6">Guía: ¿Es rentable poner placas solares en 2026?</h2>
+            <p class="text-slate-600 font-medium leading-relaxed text-lg">Con los precios actuales de la tecnología fotovoltaica y la madurez de la <strong>compensación de excedentes</strong> en España, el periodo de amortización de una instalación residencial ha bajado de los 6 años en la inmensa mayoría de regiones.</p>
+            
             <div class="grid md:grid-cols-2 gap-8 my-10">
-                <div class="bg-white p-8 rounded-3xl border shadow-sm">
-                    <h3 class="font-bold text-brand mb-2 italic">Compensación de excedentes</h3>
-                    <p class="text-sm text-slate-500">La energía que tus placas generan y no consumes se inyecta en la
-                        red, descontando dinero directamente de tu factura mensual.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <h3 class="font-black text-slate-900 mb-3 flex items-center gap-2"><i data-lucide="battery-charging" class="w-5 h-5 text-brand"></i> Compensación de excedentes</h3>
+                    <p class="text-sm text-slate-600 m-0">La energía que tus placas generan y no consumes se inyecta en la red eléctrica, descontando dinero directamente de tu factura mensual. Funciona como una batería virtual.</p>
                 </div>
-                <div class="bg-white p-8 rounded-3xl border shadow-sm">
-                    <h3 class="font-bold text-brand mb-2 italic">Deducción IRPF</h3>
-                    <p class="text-sm text-slate-500">Recuerda que instalar placas solares suele calificar para la
-                        deducción del 40% o 60% en el IRPF por mejora de eficiencia.</p>
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <h3 class="font-black text-slate-900 mb-3 flex items-center gap-2"><i data-lucide="landmark" class="w-5 h-5 text-brand"></i> Deducciones Fiscales</h3>
+                    <p class="text-sm text-slate-600 m-0">Recuerda que instalar placas solares suele calificar para la <a href="guia-deduccion-irpf-2026.html" class="text-brand font-bold hover:underline">deducción del 40% en el IRPF</a> por mejora de eficiencia, reduciendo drásticamente la inversión inicial.</p>
                 </div>
             </div>
         </article>
     </main>
 
-    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 mt-0rounded-none relative z-10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div>
-                <a href="#" class="flex items-center gap-2 mb-4 group">
-                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors">
-                        <i data-lucide="zap" class="w-6 h-6"></i>
-                    </div>
-                    <h1 class="text-xl font-extrabold tracking-tighter text-white">TuAhorroEficiente</h1>
-                </a>
-                <p class="font-medium max-w-sm">Portal independiente para la transición energética en España. Datos
-                    actualizados según normativas oficiales de 2026.</p>
+    <footer class="bg-slate-950 pt-20 pb-10 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="index.html" class="flex items-center gap-2 mb-6 group"><div class="bg-brand text-white p-2 rounded-lg"><i data-lucide="zap" class="w-5 h-5"></i></div><h2 class="text-2xl font-black text-white tracking-tighter">TuAhorroEficiente</h2></a>
+                <p class="font-medium text-slate-400 leading-relaxed max-w-sm mb-6">Construyendo el estándar de inteligencia financiera y energética para los hogares en España.</p>
+                <a href="mailto:proyectohabitateficiente@gmail.com" class="text-white font-bold hover:text-brand transition-colors">proyectohabitateficiente@gmail.com</a>
             </div>
-            <div class="grid grid-cols-2 gap-8 md:col-span-2">
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Utilidades</h6>
-                    <ul class="space-y-2.5 font-medium text-slate-300">
-                        <li><a href="calculadora-irpf.html"
-                                class="hover:text-brand-accent transition-colors">Calculadora IRPF</a></li>
-                        <li><a href="simulador-solar.html" class="hover:text-brand-accent transition-colors">Simulador
-                                Solar</a></li>
-                        <li><a href="monitor-agua.html" class="hover:text-brand-accent transition-colors">Monitor
-                                Agua</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Información & Legal</h6>
-                    <ul class="space-y-2.5 font-medium text-slate-300">
-                        <li><a href="blog.html" class="hover:text-brand-accent transition-colors">Blog de Ahorro</a>
-                        </li>
-                        <li><a href="contacto.html" class="hover:text-brand-accent transition-colors">Contacto</a></li>
-                        <li><a href="aviso-legal.html" class="hover:text-brand-accent transition-colors">Aviso Legal</a>
-                        </li>
-                        <li><a href="privacidad.html" class="hover:text-brand-accent transition-colors">Privacidad</a>
-                        </li>
-                    </ul>
-                </div>
+            <div>
+                <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Herramientas</h3>
+                <ul class="space-y-4 font-medium">
+                    <li><a href="calculadora-irpf.html" class="hover:text-white transition-colors">Calculadora Deducción IRPF</a></li>
+                    <li><a href="simulador-solar.html" class="hover:text-white transition-colors">Simulador Autoconsumo</a></li>
+                    <li><a href="monitor-agua.html" class="hover:text-white transition-colors">Calculadora Hídrica</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Legal & Empresa</h3>
+                <ul class="space-y-4 font-medium">
+                    <li><a href="sobre-nosotros.html" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition-colors">Blog y Guías</a></li>
+                    <li><a href="aviso-legal.html" rel="nofollow" class="hover:text-white transition-colors">Aviso Legal</a></li>
+                    <li><a href="privacidad.html" rel="nofollow" class="hover:text-white transition-colors">Privacidad</a></li>
+                </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 text-center mt-16 pt-8 border-t border-slate-800">
-            <p class="font-bold">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE</p>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-bold text-xs uppercase tracking-widest">&copy; 2026 Tu Ahorro Eficiente</p>
+            <p class="text-xs">Hecho en España para un futuro sostenible.</p>
         </div>
     </footer>
-    <script>
-        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
-        lucide.createIcons();
 
-        // 2. Lógica del Menú Móvil (A prueba de fallos)
+    <script>
+        // 1. Iconos y Menú Móvil
+        lucide.createIcons();
         const btnMenu = document.getElementById('mobile-menu-button');
         const menuContenedor = document.getElementById('mobile-menu');
         const iconMenu = document.getElementById('icon-menu');
         const iconClose = document.getElementById('icon-close');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
+        
         if (btnMenu && menuContenedor) {
-            // Abrir/Cerrar menú al hacer clic en el botón
             btnMenu.addEventListener('click', () => {
                 menuContenedor.classList.toggle('hidden');
                 iconMenu.classList.toggle('hidden');
                 iconClose.classList.toggle('hidden');
             });
-
-            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
-            mobileLinks.forEach(link => {
+            document.querySelectorAll('.mobile-link').forEach(link => {
                 link.addEventListener('click', () => {
                     menuContenedor.classList.add('hidden');
                     iconMenu.classList.remove('hidden');
@@ -186,7 +193,49 @@
                 });
             });
         }
+
+        // 2. LÓGICA MATEMÁTICA DEL SIMULADOR SOLAR
+        function calcularSolar() {
+            const gastoInput = document.getElementById('gasto').value;
+            const zonaMultiplicador = parseFloat(document.getElementById('zona').value);
+            
+            if (!gastoInput || isNaN(gastoInput) || gastoInput <= 0) {
+                alert("Por favor, introduce un gasto mensual válido.");
+                return;
+            }
+
+            const gastoMensual = parseFloat(gastoInput);
+            
+            // Estimación de Ahorro: Asumimos un 70% de reducción de factura con excedentes
+            const ahorroMensual = gastoMensual * 0.70;
+            const ahorroAnual = ahorroMensual * 12;
+
+            // Estimación de Placas: Cada 100€ de factura requieren aprox 3.5kWp (~7 placas de 500W) ajustado por la zona solar
+            // Zona Sur (1.5) necesita menos placas que Zona Norte (1.0)
+            const basePlacas = (gastoMensual / 100) * 7;
+            let placasRecomendadas = Math.round(basePlacas / zonaMultiplicador);
+            if (placasRecomendadas < 4) placasRecomendadas = 4; // Mínimo de placas para que una instalación tenga sentido
+
+            // Coste estimado: ~1.500€ por cada kWp (cada placa = 0.5 kWp aprox -> 750€ placa instalada)
+            const costeInstalacion = placasRecomendadas * 750;
+
+            // Amortización (Coste / Ahorro Anual)
+            const amortizacionAños = (costeInstalacion / ahorroAnual).toFixed(1);
+
+            // Mostrar resultados en pantalla
+            document.getElementById('ahorro-anual').innerText = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(ahorroAnual);
+            document.getElementById('placas').innerText = placasRecomendadas;
+            document.getElementById('años').innerText = amortizacionAños + " años";
+
+            // Animación de aparición
+            const resultDiv = document.getElementById('resultado-solar');
+            resultDiv.classList.remove('hidden');
+            
+            // Hacer scroll suave hacia el resultado
+            setTimeout(() => {
+                resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
     </script>
 </body>
-
 </html>

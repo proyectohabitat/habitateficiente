@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5Z8GNSBC');</script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitor de Ahorro de Agua | Calcula tu Consumo Hídrico 2026</title>
-    <meta name="description"
-        content="Calculadora gratuita de consumo de agua. Evalúa tu gasto hídrico diario, descubre cuánto puedes ahorrar y recibe consejos para reducir tu factura de agua.">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    <meta name="description" content="Calculadora gratuita de consumo de agua. Evalúa tu gasto hídrico diario, descubre cuánto puedes ahorrar y recibe consejos para reducir tu factura de agua.">
+    <link rel="canonical" href="https://tuahorroeficiente.es/monitor-agua.html">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Monitor de Agua TuAhorroEficiente",
-      "applicationCategory": "FinanceApplication",
+      "applicationCategory": "UtilityApplication",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
     }
     </script>
@@ -25,149 +25,143 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
-            theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#f0f7ff' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } }
+            theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#002a5c', light: '#eaf4ff', accent: '#00b4d8' } }, fontFamily: { sans: ['Inter', 'sans-serif'] }, boxShadow: { 'glow': '0 0 20px rgba(1, 72, 142, 0.3)' } } }
         }
     </script>
+    <style>body { font-feature-settings: "ss01", "cv01"; text-rendering: optimizeLegibility; }</style>
 </head>
+<body class="bg-white text-slate-900 antialiased font-sans flex flex-col min-h-screen">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<body class="bg-white text-slate-900 antialiased font-sans">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-4">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-100 py-4 shadow-sm transition-all relative">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2.5 rounded-xl transition"><i data-lucide="zap" class="w-6 h-6"></i>
-                </div>
-                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span
-                        class="text-brand">Eficiente</span></h1>
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="bg-gradient-to-br from-brand to-brand-accent text-white p-2.5 rounded-xl shadow-lg transform group-hover:scale-105 transition-transform"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                <div class="flex flex-col"><span class="text-2xl font-black tracking-tighter text-slate-900 leading-none">TuAhorro<span class="text-brand">Eficiente</span></span><span class="text-[10px] uppercase font-bold text-slate-400 tracking-widest">Inteligencia Energética</span></div>
             </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html#contexto" class="hover:text-brand transition">El Contexto 2026</a>
-                <a href="index.html#herramientas" class="hover:text-brand transition">Herramientas</a>
-                <a href="blog.html" class="hover:text-brand transition">Blog</a>
-                <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-                <a href="index.html#herramientas"
-                    class="bg-brand text-white px-6 py-3 rounded-full shadow-md text-xs font-bold">EMPEZAR</a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="text-brand border-b-2 border-brand pb-1">Herramientas</a>
+                <a href="blog.html" class="hover:text-brand transition-colors">Blog & Guías</a>
+                <a href="contacto.html" class="hover:text-brand transition-colors">Contacto</a>
+                <a href="index.html#herramientas" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar Ahorro</a>
+            </div>
+            <button id="mobile-menu-button" aria-label="Abrir menú" class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg hover:bg-slate-50 transition-colors focus:outline-none"><span id="icon-menu" class="block"><i data-lucide="menu" class="w-6 h-6"></i></span><span id="icon-close" class="hidden"><i data-lucide="x" class="w-6 h-6"></i></span></button>
+        </div>
+        <div id="mobile-menu" class="hidden absolute top-[100%] left-0 w-full bg-white border-b border-slate-100 shadow-xl transition-all z-40">
+            <div class="flex flex-col px-6 py-6 gap-6 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="mobile-link hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="mobile-link text-brand transition-colors">Herramientas</a>
+                <a href="blog.html" class="mobile-link hover:text-brand transition-colors">Blog & Guías</a>
+                <a href="contacto.html" class="mobile-link hover:text-brand transition-colors">Contacto</a>
+                <a href="index.html#herramientas" class="mobile-link bg-slate-900 text-white px-6 py-4 rounded-xl text-center hover:bg-brand transition-all shadow-md mt-2">Auditar Ahorro</a>
             </div>
         </div>
     </nav>
 
-    <main class="py-16 px-6 bg-slate-50">
+    <main class="flex-grow py-16 md:py-24 px-6 bg-slate-50">
         <div class="max-w-2xl mx-auto text-center mb-10">
-            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Monitor de <span class="text-brand">Consumo
-                    Hídrico</span></h1>
-            <p class="text-slate-500 font-medium">Audita tu gasto de agua diario y descubre el impacto en tu economía.
-            </p>
+            <span class="bg-cyan-100 text-cyan-800 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 inline-block shadow-sm">Auditoría Hídrica</span>
+            <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">Monitor de <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Consumo de Agua</span></h1>
+            <p class="text-slate-500 font-medium text-lg">Descubre cuántos litros gastas realmente al mes y cuánto dinero estás tirando literalmente por el desagüe.</p>
         </div>
 
-        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10 mb-16">
-            <div class="space-y-6 text-left">
+        <div class="max-w-xl mx-auto bg-white rounded-[3rem] shadow-2xl border border-slate-100 p-8 md:p-12 mb-16 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+            
+            <div class="space-y-6 text-left relative z-10">
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Minutos de ducha diarios (total
-                        hogar)</label>
-                    <input type="number" id="ducha" placeholder="Ej: 15"
-                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <label class="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-widest mb-3"><i data-lucide="shower-head" class="w-4 h-4 text-cyan-500"></i> Minutos de ducha diarios (Hogar total)</label>
+                    <input type="number" id="ducha" placeholder="Ej: 20" class="w-full p-4 bg-slate-50 border-2 border-slate-100 focus:border-cyan-400 rounded-xl outline-none font-bold text-slate-900 text-xl transition-all">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Usos de cisterna al día</label>
-                    <input type="number" id="cisterna" placeholder="Ej: 10"
-                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <label class="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-widest mb-3"><i data-lucide="droplets" class="w-4 h-4 text-cyan-500"></i> Usos de cisterna al día (Hogar total)</label>
+                    <input type="number" id="cisterna" placeholder="Ej: 15" class="w-full p-4 bg-slate-50 border-2 border-slate-100 focus:border-cyan-400 rounded-xl outline-none font-bold text-slate-900 text-xl transition-all">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Lavavajillas/Lavadoras por
-                        semana</label>
-                    <input type="number" id="electro" placeholder="Ej: 7"
-                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <label class="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-widest mb-3"><i data-lucide="washing-machine" class="w-4 h-4 text-cyan-500"></i> Lavadoras / Lavavajillas por semana</label>
+                    <input type="number" id="electro" placeholder="Ej: 5" class="w-full p-4 bg-slate-50 border-2 border-slate-100 focus:border-cyan-400 rounded-xl outline-none font-bold text-slate-900 text-xl transition-all">
                 </div>
-                <button onclick="calcularAgua()"
-                    class="w-full bg-brand text-white py-5 rounded-xl font-black text-lg shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR
-                    IMPACTO</button>
+                <button onclick="calcularAgua()" class="w-full bg-slate-900 text-white py-5 rounded-xl font-black text-lg shadow-xl hover:bg-cyan-600 transition-all transform hover:-translate-y-1 mt-4">CALCULAR IMPACTO MENSUAL</button>
             </div>
 
-            <div id="resultado-agua" class="hidden mt-10 pt-10 border-t text-center animate-in fade-in">
-                <p class="text-brand font-bold uppercase text-xs mb-2">Consumo mensual estimado:</p>
-                <div id="litros" class="text-5xl font-black text-brand tracking-tighter">0L</div>
-                <p class="text-slate-400 mt-2 font-bold" id="coste-agua">Coste aprox: 0€/mes</p>
+            <div id="resultado-agua" class="hidden mt-10 pt-10 border-t border-slate-100 text-center animate-[fade-in_0.5s_ease-out]">
+                <p class="text-cyan-700 font-bold uppercase text-xs mb-2 tracking-widest">Consumo mensual estimado:</p>
+                <div id="litros" class="text-5xl font-black text-slate-900 tracking-tighter mb-2">0L</div>
+                <p class="text-slate-500 font-bold text-lg mb-8" id="coste-agua">Coste aprox: 0€/mes</p>
+
+                <div class="bg-cyan-50 border border-cyan-100 p-6 rounded-2xl text-left">
+                    <h4 class="font-black text-slate-900 mb-2 flex items-center gap-2"><i data-lucide="wrench" class="w-5 h-5 text-cyan-600"></i> Reduce este gasto a la mitad</h4>
+                    <p class="text-sm text-slate-600 mb-4">Instalar aireadores en los grifos y cabezales de ducha eficientes cuesta menos de 15€ y reduce el consumo de agua en un 50% sin perder presión.</p>
+                    <a href="blog.html" class="inline-flex items-center justify-center gap-2 w-full bg-cyan-600 text-white px-4 py-3 rounded-lg font-bold text-sm hover:bg-cyan-700 transition-colors">
+                        Ver guías de ahorro hídrico <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left leading-relaxed">
-            <h2 class="text-3xl font-black italic mb-6">Consejos de Eficiencia Hídrica</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-2xl border">
-                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="droplet"
-                            class="w-4 h-4"></i> Aireadores de grifo</h3>
-                    <p class="text-sm text-slate-500">Instalar aireadores puede reducir el consumo de agua hasta en un
-                        50% sin perder sensación de presión.</p>
+        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left bg-white p-10 md:p-16 rounded-[3rem] shadow-sm border border-slate-100">
+            <h2 class="text-3xl font-black mb-6">Consejos Avanzados de Eficiencia Hídrica</h2>
+            <p class="text-lg text-slate-600 font-medium">El coste del metro cúbico (m3) de agua en España no para de subir debido a las sequías crónicas. Optimizar tu hogar ya no es solo una cuestión ecológica.</p>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2 mt-0"><i data-lucide="droplet" class="w-5 h-5 text-cyan-500"></i> Aireadores de grifo</h3>
+                    <p class="text-sm text-slate-600 m-0">Mezclan agua con aire. La sensación de volumen de agua es la misma para lavarse las manos, pero el contador registra la mitad del consumo.</p>
                 </div>
-                <div class="bg-white p-6 rounded-2xl border">
-                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="check-circle"
-                            class="w-4 h-4"></i> Cisternas de doble carga</h3>
-                    <p class="text-sm text-slate-500">Un sistema de doble pulsador ahorra una media de 3 litros por uso
-                        en comparación con modelos antiguos.</p>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h3 class="font-bold text-slate-900 mb-2 flex items-center gap-2 mt-0"><i data-lucide="toggle-left" class="w-5 h-5 text-cyan-500"></i> Cisternas de doble descarga</h3>
+                    <p class="text-sm text-slate-600 m-0">El inodoro es por donde se escapa casi el 30% del agua de una casa. Un sistema de doble pulsador (3L y 6L) ahorra hasta 4.000 litros al año por persona.</p>
                 </div>
             </div>
         </article>
     </main>
 
-    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 relative z-10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-left">
-            <div>
-                <a href="index.html" class="flex items-center gap-2 mb-4 group">
-                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors"><i data-lucide="zap"
-                            class="w-6 h-6"></i></div>
-                    <h1 class="text-xl font-extrabold tracking-tighter text-white uppercase">TuAhorroEficiente</h1>
-                </a>
-                <p class="font-medium max-w-sm italic">Portal independiente para la transición energética y el ahorro
-                    sostenible en España.</p>
+    <footer class="bg-slate-950 pt-20 pb-10 text-slate-400 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-2">
+                <a href="index.html" class="flex items-center gap-2 mb-6 group"><div class="bg-brand text-white p-2 rounded-lg"><i data-lucide="zap" class="w-5 h-5"></i></div><h2 class="text-2xl font-black text-white tracking-tighter">TuAhorroEficiente</h2></a>
+                <p class="font-medium text-slate-400 leading-relaxed max-w-sm mb-6">Construyendo el estándar de inteligencia financiera y energética para los hogares en España.</p>
+                <a href="mailto:proyectohabitateficiente@gmail.com" class="text-white font-bold hover:text-brand transition-colors">proyectohabitateficiente@gmail.com</a>
             </div>
-            <div class="grid grid-cols-2 gap-8 md:col-span-2">
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase text-xs tracking-widest">Utilidades</h6>
-                    <ul class="space-y-2.5 text-slate-300">
-                        <li><a href="calculadora-irpf.html" class="hover:text-brand transition">Calculadora IRPF</a>
-                        </li>
-                        <li><a href="simulador-solar.html" class="hover:text-brand transition">Simulador Solar</a></li>
-                        <li><a href="monitor-agua.html" class="hover:text-brand transition">Monitor Agua</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase text-xs tracking-widest">Legal</h6>
-                    <ul class="space-y-2.5 text-slate-300">
-                        <li><a href="blog.html" class="hover:text-brand transition">Blog de Ahorro</a></li>
-                        <li><a href="contacto.html" class="hover:text-brand transition">Contacto</a></li>
-                        <li><a href="aviso-legal.html" class="hover:text-brand transition">Aviso Legal</a></li>
-                    </ul>
-                </div>
+            <div>
+                <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Herramientas</h3>
+                <ul class="space-y-4 font-medium">
+                    <li><a href="calculadora-irpf.html" class="hover:text-white transition-colors">Calculadora Deducción IRPF</a></li>
+                    <li><a href="simulador-solar.html" class="hover:text-white transition-colors">Simulador Autoconsumo</a></li>
+                    <li><a href="monitor-agua.html" class="hover:text-white transition-colors">Calculadora Hídrica</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-black uppercase tracking-widest text-xs mb-6">Legal & Empresa</h3>
+                <ul class="space-y-4 font-medium">
+                    <li><a href="sobre-nosotros.html" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition-colors">Blog y Guías</a></li>
+                    <li><a href="aviso-legal.html" rel="nofollow" class="hover:text-white transition-colors">Aviso Legal</a></li>
+                    <li><a href="privacidad.html" rel="nofollow" class="hover:text-white transition-colors">Privacidad</a></li>
+                </ul>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 text-center mt-12 pt-8 border-t border-slate-800">
-            <p class="font-bold">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE e IDAE</p>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-bold text-xs uppercase tracking-widest">&copy; 2026 Tu Ahorro Eficiente</p>
+            <p class="text-xs">Hecho en España para un futuro sostenible.</p>
         </div>
     </footer>
 
     <script>
-        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
+        // 1. Iconos y Menú Móvil
         lucide.createIcons();
-
-        // 2. Lógica del Menú Móvil (A prueba de fallos)
         const btnMenu = document.getElementById('mobile-menu-button');
         const menuContenedor = document.getElementById('mobile-menu');
         const iconMenu = document.getElementById('icon-menu');
         const iconClose = document.getElementById('icon-close');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
+        
         if (btnMenu && menuContenedor) {
-            // Abrir/Cerrar menú al hacer clic en el botón
             btnMenu.addEventListener('click', () => {
                 menuContenedor.classList.toggle('hidden');
                 iconMenu.classList.toggle('hidden');
                 iconClose.classList.toggle('hidden');
             });
-
-            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
-            mobileLinks.forEach(link => {
+            document.querySelectorAll('.mobile-link').forEach(link => {
                 link.addEventListener('click', () => {
                     menuContenedor.classList.add('hidden');
                     iconMenu.classList.remove('hidden');
@@ -175,7 +169,49 @@
                 });
             });
         }
+
+        // 2. LÓGICA DEL MONITOR DE AGUA
+        function calcularAgua() {
+            const duchaInput = document.getElementById('ducha').value;
+            const cisternaInput = document.getElementById('cisterna').value;
+            const electroInput = document.getElementById('electro').value;
+
+            // Validar si hay al menos un dato
+            if (!duchaInput && !cisternaInput && !electroInput) {
+                alert("Por favor, introduce al menos un dato de consumo.");
+                return;
+            }
+
+            const ducha = parseFloat(duchaInput) || 0;
+            const cisterna = parseFloat(cisternaInput) || 0;
+            const electro = parseFloat(electroInput) || 0;
+
+            // Cálculos base (Medias IDAE y OMS)
+            // Una ducha media gasta unos 12 litros por minuto
+            // Una cisterna media gasta unos 6 litros por uso
+            // Lavadora/Lavavajillas gastan unos 45 litros por ciclo (repartido entre 7 días)
+            const litrosDuchaDia = ducha * 12;
+            const litrosCisternaDia = cisterna * 6;
+            const litrosElectroDia = (electro * 45) / 7;
+
+            const litrosDia = litrosDuchaDia + litrosCisternaDia + litrosElectroDia;
+            const litrosMes = Math.round(litrosDia * 30.4);
+            
+            // Precio medio m3 en España aprox es 1.95€ (Incluyendo tasas y saneamiento)
+            const m3Mes = litrosMes / 1000;
+            const costeMes = m3Mes * 1.95;
+
+            // Mostrar resultados
+            document.getElementById('litros').innerText = litrosMes.toLocaleString('es-ES') + ' L';
+            document.getElementById('coste-agua').innerText = 'Coste estimado: ' + costeMes.toLocaleString('es-ES', {style: 'currency', currency: 'EUR'}) + '/mes';
+            
+            // Mostrar y animar
+            const resultDiv = document.getElementById('resultado-agua');
+            resultDiv.classList.remove('hidden');
+            setTimeout(() => {
+                resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
     </script>
 </body>
-
 </html>
