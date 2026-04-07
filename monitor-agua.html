@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitor de Ahorro de Agua | Calcula tu Consumo Hídrico 2026</title>
-    <meta name="description" content="Calculadora gratuita de consumo de agua. Evalúa tu gasto hídrico diario, descubre cuánto puedes ahorrar y recibe consejos para reducir tu factura de agua.">
-    
+    <meta name="description"
+        content="Calculadora gratuita de consumo de agua. Evalúa tu gasto hídrico diario, descubre cuánto puedes ahorrar y recibe consejos para reducir tu factura de agua.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2301488e' stroke='%2301488e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,46 +29,60 @@
         }
     </script>
 </head>
+
 <body class="bg-white text-slate-900 antialiased font-sans">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
 
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-4">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2.5 rounded-xl transition"><i data-lucide="zap" class="w-6 h-6"></i></div>
-                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span class="text-brand">Eficiente</span></h1>
+                <div class="bg-brand text-white p-2.5 rounded-xl transition"><i data-lucide="zap" class="w-6 h-6"></i>
+                </div>
+                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span
+                        class="text-brand">Eficiente</span></h1>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
                 <a href="index.html#contexto" class="hover:text-brand transition">El Contexto 2026</a>
                 <a href="index.html#herramientas" class="hover:text-brand transition">Herramientas</a>
                 <a href="blog.html" class="hover:text-brand transition">Blog</a>
                 <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-                <a href="index.html#herramientas" class="bg-brand text-white px-6 py-3 rounded-full shadow-md text-xs font-bold">EMPEZAR</a>
+                <a href="index.html#herramientas"
+                    class="bg-brand text-white px-6 py-3 rounded-full shadow-md text-xs font-bold">EMPEZAR</a>
             </div>
         </div>
     </nav>
 
     <main class="py-16 px-6 bg-slate-50">
         <div class="max-w-2xl mx-auto text-center mb-10">
-            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Monitor de <span class="text-brand">Consumo Hídrico</span></h1>
-            <p class="text-slate-500 font-medium">Audita tu gasto de agua diario y descubre el impacto en tu economía.</p>
+            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Monitor de <span class="text-brand">Consumo
+                    Hídrico</span></h1>
+            <p class="text-slate-500 font-medium">Audita tu gasto de agua diario y descubre el impacto en tu economía.
+            </p>
         </div>
 
         <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10 mb-16">
             <div class="space-y-6 text-left">
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Minutos de ducha diarios (total hogar)</label>
-                    <input type="number" id="ducha" placeholder="Ej: 15" class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Minutos de ducha diarios (total
+                        hogar)</label>
+                    <input type="number" id="ducha" placeholder="Ej: 15"
+                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
                 </div>
                 <div>
                     <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Usos de cisterna al día</label>
-                    <input type="number" id="cisterna" placeholder="Ej: 10" class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <input type="number" id="cisterna" placeholder="Ej: 10"
+                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
                 </div>
                 <div>
-                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Lavavajillas/Lavadoras por semana</label>
-                    <input type="number" id="electro" placeholder="Ej: 7" class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
+                    <label class="block text-xs font-bold text-slate-400 uppercase mb-3">Lavavajillas/Lavadoras por
+                        semana</label>
+                    <input type="number" id="electro" placeholder="Ej: 7"
+                        class="w-full p-4 bg-slate-50 border-2 border-transparent focus:border-brand rounded-xl outline-none font-bold">
                 </div>
-                <button onclick="calcularAgua()" class="w-full bg-brand text-white py-5 rounded-xl font-black text-lg shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR IMPACTO</button>
+                <button onclick="calcularAgua()"
+                    class="w-full bg-brand text-white py-5 rounded-xl font-black text-lg shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR
+                    IMPACTO</button>
             </div>
 
             <div id="resultado-agua" class="hidden mt-10 pt-10 border-t text-center animate-in fade-in">
@@ -79,12 +96,16 @@
             <h2 class="text-3xl font-black italic mb-6">Consejos de Eficiencia Hídrica</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-2xl border">
-                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="droplet" class="w-4 h-4"></i> Aireadores de grifo</h3>
-                    <p class="text-sm text-slate-500">Instalar aireadores puede reducir el consumo de agua hasta en un 50% sin perder sensación de presión.</p>
+                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="droplet"
+                            class="w-4 h-4"></i> Aireadores de grifo</h3>
+                    <p class="text-sm text-slate-500">Instalar aireadores puede reducir el consumo de agua hasta en un
+                        50% sin perder sensación de presión.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl border">
-                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Cisternas de doble carga</h3>
-                    <p class="text-sm text-slate-500">Un sistema de doble pulsador ahorra una media de 3 litros por uso en comparación con modelos antiguos.</p>
+                    <h3 class="font-bold text-brand mb-2 flex items-center gap-2"><i data-lucide="check-circle"
+                            class="w-4 h-4"></i> Cisternas de doble carga</h3>
+                    <p class="text-sm text-slate-500">Un sistema de doble pulsador ahorra una media de 3 litros por uso
+                        en comparación con modelos antiguos.</p>
                 </div>
             </div>
         </article>
@@ -94,16 +115,19 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-left">
             <div>
                 <a href="index.html" class="flex items-center gap-2 mb-4 group">
-                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors"><i data-lucide="zap" class="w-6 h-6"></i></div>
+                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors"><i data-lucide="zap"
+                            class="w-6 h-6"></i></div>
                     <h1 class="text-xl font-extrabold tracking-tighter text-white uppercase">TuAhorroEficiente</h1>
                 </a>
-                <p class="font-medium max-w-sm italic">Portal independiente para la transición energética y el ahorro sostenible en España.</p>
+                <p class="font-medium max-w-sm italic">Portal independiente para la transición energética y el ahorro
+                    sostenible en España.</p>
             </div>
             <div class="grid grid-cols-2 gap-8 md:col-span-2">
                 <div>
                     <h6 class="font-bold text-white mb-4 uppercase text-xs tracking-widest">Utilidades</h6>
                     <ul class="space-y-2.5 text-slate-300">
-                        <li><a href="calculadora-irpf.html" class="hover:text-brand transition">Calculadora IRPF</a></li>
+                        <li><a href="calculadora-irpf.html" class="hover:text-brand transition">Calculadora IRPF</a>
+                        </li>
                         <li><a href="simulador-solar.html" class="hover:text-brand transition">Simulador Solar</a></li>
                         <li><a href="monitor-agua.html" class="hover:text-brand transition">Monitor Agua</a></li>
                     </ul>
@@ -140,4 +164,5 @@
         }
     </script>
 </body>
+
 </html>
