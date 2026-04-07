@@ -1,164 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Deducción IRPF Eficiencia Energética 2026 | Tu Ahorro Eficiente</title>
-    <meta name="description"
-        content="Calcula cuánto desgravar en tu declaración de la renta por reformas energéticas. Requisitos de Hacienda, certificados y límites 2026.">
-
+    <title>Calculadora Deducción IRPF Eficiencia Energética 2026 | Simula tu Devolución</title>
+    <meta name="description" content="Calculadora oficial para estimar tu deducción del 20%, 40% o 60% en el IRPF por obras de mejora energética. Conoce los requisitos y plazos de Hacienda.">
+    <link rel="canonical" href="https://tuahorroeficiente.es/calculadora-irpf.html">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Calculadora IRPF Energética TuAhorroEficiente",
-      "applicationCategory": "FinanceApplication",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Qué porcentaje me puedo deducir en el IRPF por poner ventanas o aislamientos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes deducirte un 20% si reduces la demanda de calefacción al menos un 7%, o un 40% si reduces el consumo de energía primaria un 30% o consigues etiqueta A o B."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Es obligatorio el Certificado de Eficiencia Energética?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, es el requisito principal de Hacienda. Necesitas un certificado expedido antes del inicio de las obras y otro al finalizarlas para acreditar la mejora."
+        }
+      }]
     }
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#f0f7ff' } }, fontFamily: { sans: ['Inter', 'sans-serif'] } } } }</script>
+    <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#01488e',dark:'#002a5c',light:'#eaf4ff'}},fontFamily:{sans:['Inter','sans-serif']}}}}</script>
 </head>
+<body class="bg-slate-50 text-slate-900 antialiased font-sans">
+    
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-100 py-4 shadow-sm"><div class="max-w-7xl mx-auto px-6 flex justify-between items-center"><a href="index.html" class="flex items-center gap-3 group"><div class="bg-gradient-to-br from-brand to-cyan-500 text-white p-2.5 rounded-xl"><i data-lucide="zap" class="w-6 h-6"></i></div><span class="text-2xl font-black tracking-tighter">TuAhorro<span class="text-brand">Eficiente</span></span></a><div class="hidden md:flex gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide"><a href="index.html#herramientas" class="hover:text-brand">Herramientas</a><a href="blog.html" class="hover:text-brand">Blog</a><a href="contacto.html" class="hover:text-brand">Contacto</a></div></div></nav>
 
-<body class="bg-white text-slate-900 antialiased font-sans">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <main class="py-16 md:py-24 px-6">
+        <header class="max-w-3xl mx-auto text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tighter text-slate-900 mb-6">Simulador Deducción IRPF <span class="text-brand">2026</span></h1>
+            <p class="text-xl text-slate-600 font-medium">Conoce en tiempo real el impacto fiscal de tus reformas energéticas. Herramienta ajustada a los límites de base máxima anual vigentes en el BOE.</p>
+        </header>
 
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2.5 rounded-xl group-hover:bg-brand-dark transition-colors">
-                    <i data-lucide="zap" class="w-6 h-6"></i>
+        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 p-8 md:p-12 mb-20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+            
+            <div class="space-y-8 relative z-10">
+                <div>
+                    <label class="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-widest mb-3">
+                        <i data-lucide="coins" class="w-4 h-4 text-brand"></i> Base Liquidable (€)
+                    </label>
+                    <input type="number" id="inversion" placeholder="Coste total de la reforma..." class="w-full p-5 bg-slate-50 border-2 border-slate-100 focus:border-brand rounded-2xl outline-none text-2xl font-bold text-slate-900 transition-all shadow-inner">
+                    <p class="text-xs text-slate-400 mt-2 font-medium">Recuerda restar cualquier subvención ya concedida al importe total.</p>
                 </div>
-                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span
-                        class="text-brand">Eficiente</span></h1>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="index.html#contexto" class="hover:text-brand transition">El Contexto 2026</a>
-                <a href="#herramientas" class="hover:text-brand transition">Herramientas</a>
-                <a href="blog.html" class="hover:text-brand transition">Blog</a>
-                <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
-                <a href="#herramientas"
-                    class="bg-brand text-white px-6 py-3 rounded-full hover:bg-brand-dark transition shadow-md text-xs uppercase tracking-widest font-bold">Empezar</a>
-            </div>
-            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu"
-                    class="w-6 h-6"></i></button>
-        </div>
-    </nav>
-
-    <main class="py-16 px-6 bg-slate-50">
-        <div class="max-w-2xl mx-auto text-center mb-10">
-            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Calculadora <span class="text-brand">Deducción
-                    IRPF</span></h1>
-            <p class="text-slate-500 font-medium leading-relaxed">Simula tu ahorro fiscal por obras de mejora de la
-                eficiencia energética realizadas en 2026.</p>
-        </div>
-
-        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10 mb-16">
-            <div class="space-y-8 text-left">
-                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Inversión
-                        Realizada (€)</label><input type="number" id="inversion" placeholder="Ej: 5000"
-                        class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none text-2xl font-bold transition-all text-left">
-                </div>
-                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 text-left">Tipo
-                        de Deducción</label>
-                    <select id="tipo"
-                        class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none font-semibold text-left">
-                        <option value="0.20">Deducción del 20% (Reducción demanda 7%)</option>
-                        <option value="0.40">Deducción del 40% (Reducción consumo 30% / Clase A-B)</option>
-                        <option value="0.60">Deducción del 60% (Rehabilitación edificio)</option>
+                
+                <div>
+                    <label class="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-widest mb-3">
+                        <i data-lucide="file-check-2" class="w-4 h-4 text-brand"></i> Tramo a aplicar según Certificado
+                    </label>
+                    <select id="tipo" class="w-full p-5 bg-slate-50 border-2 border-slate-100 focus:border-brand rounded-2xl outline-none font-bold text-slate-700 appearance-none cursor-pointer">
+                        <option value="0.20">Reducción del 7% demanda calefacción (Deducción 20%)</option>
+                        <option value="0.40">Reducción del 30% energía primaria o Clase A/B (Deducción 40%)</option>
+                        <option value="0.60">Rehabilitación integral edificio residencial (Deducción 60%)</option>
                     </select>
                 </div>
-                <button onclick="calcular()"
-                    class="w-full bg-brand text-white py-6 rounded-2xl font-black text-xl shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR
-                    MI DEVOLUCIÓN</button>
+                
+                <button onclick="calcular()" class="w-full bg-slate-900 text-white py-6 rounded-2xl font-black text-xl shadow-lg hover:bg-brand transition-all transform hover:-translate-y-1">CALCULAR AHORRO FISCAL</button>
             </div>
-            <div id="resultado"
-                class="hidden mt-12 pt-12 border-t text-center animate-in fade-in slide-in-from-bottom-4">
-                <p class="text-brand font-bold uppercase text-xs mb-2">Devolución Estimada:</p>
-                <div id="cuantia" class="text-6xl font-black text-brand tracking-tighter">0,00€</div>
+            
+            <div id="resultado" class="hidden mt-10 pt-10 border-t border-slate-100 text-center animate-[fade-in_0.5s_ease-out]">
+                <span class="inline-block bg-green-50 text-green-700 font-bold uppercase tracking-widest text-xs px-4 py-1.5 rounded-full mb-4">Resultado Estimado</span>
+                <div class="text-[4rem] leading-none font-black text-slate-900 tracking-tighter mb-2"><span id="cuantia" class="text-brand">0</span></div>
+                <p class="text-sm text-slate-500 font-medium max-w-sm mx-auto">Esta es la cantidad que podrías desgravar en tu próxima declaración de la renta.</p>
             </div>
         </div>
 
-        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left">
-            <h2 class="text-3xl font-black italic mb-8">Preguntas Frecuentes sobre Deducción IRPF 2026</h2>
-            <div class="grid gap-6">
-                <div class="bg-white p-6 rounded-3xl border">
-                    <h3 class="text-lg font-bold mb-2">¿Cuál es el requisito indispensable para desgravar?</h3>
-                    <p class="text-sm text-slate-600">Es obligatorio disponer de un <strong>Certificado de Eficiencia
-                            Energética</strong> emitido antes de la obra y otro después de finalizarla para demostrar la
-                        mejora conseguida.</p>
-                </div>
-                <div class="bg-white p-6 rounded-3xl border">
-                    <h3 class="text-lg font-bold mb-2">¿Puedo pagar en efectivo?</h3>
-                    <p class="text-sm text-slate-600">No. Para Hacienda, solo son válidos los pagos realizados mediante
-                        tarjeta, transferencia bancaria, cheque nominativo o ingreso en cuenta.</p>
-                </div>
+        <article class="max-w-4xl mx-auto bg-white p-10 md:p-16 rounded-[3rem] border border-slate-100 shadow-sm prose prose-lg prose-slate">
+            <h2 class="text-3xl font-black tracking-tight mb-8">Requisitos técnicos para Hacienda en 2026</h2>
+            <p>La deducción en el IRPF por obras de mejora de la eficiencia energética en viviendas es una de las medidas fiscales más beneficiosas. Sin embargo, los requerimientos técnicos exigidos por la Agencia Tributaria son estrictos.</p>
+            
+            <h3 class="text-2xl font-bold mt-10 mb-6 flex items-center gap-3"><i data-lucide="alert-triangle" class="w-6 h-6 text-yellow-500"></i> El papel crítico del Certificado Energético</h3>
+            <p>La ley establece que la única forma válida de acreditar la mejora es mediante <strong>dos Certificados de Eficiencia Energética (CEE)</strong> registrados por un técnico competente:</p>
+            <ul>
+                <li><strong>Certificado Inicial:</strong> Emitido como máximo dos años antes del inicio de las obras.</li>
+                <li><strong>Certificado Final:</strong> Emitido tras la finalización de las obras y siempre antes del 1 de enero del año fiscal correspondiente.</li>
+            </ul>
+
+            <h3 class="text-2xl font-bold mt-10 mb-6">Límites y bases de deducción</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-sm font-medium">
+                    <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 uppercase tracking-widest text-xs">
+                        <tr><th class="px-6 py-4">Porcentaje</th><th class="px-6 py-4">Requisito técnico</th><th class="px-6 py-4">Base máxima anual</th></tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr><td class="px-6 py-4 font-bold text-brand">20%</td><td class="px-6 py-4">Reducir ≥7% demanda calefacción/refrigeración</td><td class="px-6 py-4">5.000 €</td></tr>
+                        <tr><td class="px-6 py-4 font-bold text-brand">40%</td><td class="px-6 py-4">Reducir ≥30% consumo E. Primaria o subir a letra A/B</td><td class="px-6 py-4">7.500 €</td></tr>
+                        <tr><td class="px-6 py-4 font-bold text-brand">60%</td><td class="px-6 py-4">Rehabilitación edificio completo (≥30% reducción)</td><td class="px-6 py-4">5.000 € / año (Máx acumulado 15.000€)</td></tr>
+                    </tbody>
+                </table>
             </div>
+
+            <p class="text-sm text-slate-500 mt-6 italic">Nota: Para tener derecho a la deducción, las facturas deben abonarse obligatoriamente mediante medios bancarios (transferencia, tarjeta, cheque nominativo). Los pagos en efectivo invalidan la deducción.</p>
         </article>
     </main>
 
-    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 mt-0rounded-none relative z-10">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div>
-                <a href="#" class="flex items-center gap-2 mb-4 group">
-                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors">
-                        <i data-lucide="zap" class="w-6 h-6"></i>
-                    </div>
-                    <h1 class="text-xl font-extrabold tracking-tighter text-white">TuAhorroEficiente</h1>
-                </a>
-                <p class="font-medium max-w-sm">Portal independiente para la transición energética en España. Datos
-                    actualizados según normativas oficiales de 2026.</p>
-            </div>
-            <div class="grid grid-cols-2 gap-8 md:col-span-2">
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Utilidades</h6>
-                    <ul class="space-y-2.5 font-medium text-slate-300">
-                        <li><a href="calculadora-irpf.html"
-                                class="hover:text-brand-accent transition-colors">Calculadora IRPF</a></li>
-                        <li><a href="simulador-solar.html" class="hover:text-brand-accent transition-colors">Simulador
-                                Solar</a></li>
-                        <li><a href="monitor-agua.html" class="hover:text-brand-accent transition-colors">Monitor
-                                Agua</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Información & Legal</h6>
-                    <ul class="space-y-2.5 font-medium text-slate-300">
-                        <li><a href="blog.html" class="hover:text-brand-accent transition-colors">Blog de Ahorro</a>
-                        </li>
-                        <li><a href="contacto.html" class="hover:text-brand-accent transition-colors">Contacto</a></li>
-                        <li><a href="aviso-legal.html" class="hover:text-brand-accent transition-colors">Aviso Legal</a>
-                        </li>
-                        <li><a href="privacidad.html" class="hover:text-brand-accent transition-colors">Privacidad</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 text-center mt-16 pt-8 border-t border-slate-800">
-            <p class="font-bold">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE</p>
-        </div>
-    </footer>
     <script>
         lucide.createIcons();
         function calcular() {
             const inv = parseFloat(document.getElementById('inversion').value);
             const porc = parseFloat(document.getElementById('tipo').value);
-            if (inv > 0) {
+            if(inv > 0) {
                 let res = inv * porc;
-                if (porc <= 0.4 && res > 3000) res = 3000; else if (porc == 0.6 && res > 9000) res = 9000;
-                document.getElementById('cuantia').innerText = res.toLocaleString('es-ES', { style: 'currency', currency: 'EUR' });
+                // Límites estrictos según tabla BOE
+                if(porc === 0.20 && res > (5000 * 0.20)) res = 1000; 
+                else if(porc === 0.40 && res > (7500 * 0.40)) res = 3000;
+                else if(porc === 0.60 && res > (5000 * 0.60)) res = 3000; // Límite anual del 60%
+                
+                const format = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' }).format(res);
+                document.getElementById('cuantia').innerText = format;
                 document.getElementById('resultado').classList.remove('hidden');
-                document.getElementById('resultado').scrollIntoView({ behavior: 'smooth' });
             }
         }
     </script>
 </body>
-
 </html>
