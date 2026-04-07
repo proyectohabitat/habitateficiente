@@ -1,46 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5Z8GNSBC');</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso Legal | Tu Ahorro Eficiente</title>
 
-    <meta name="description" content="Calculadoras gratuitas de ahorro energético en España. Deducción IRPF por eficiencia y simulador solar actualizado a 2026.">
-<meta name="keywords" content="ahorro energetico, calculadora irpf 2026, placas solares españa, eficiencia energetica vivienda">
-<meta name="author" content="Tu Ahorro Eficiente">
+    <meta name="description" content="Información legal y términos de uso del portal Tu Ahorro Eficiente.">
 
-<meta property="og:title" content="Tu Ahorro Eficiente | Optimiza tu hogar en 2026">
-<meta property="og:description" content="Usa nuestras herramientas gratuitas para ahorrar miles de euros en impuestos y facturas.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tuahorroeficiente.es">
-<meta property="og:image" content="https://tuahorroeficiente.es/og-image.jpg"> <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3105/3105035.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#01488e',
+                            dark: '#003366',
+                            light: '#f0f7ff',
+                            accent: '#007bff'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-feature-settings: "ss01", "ss03", "cv01-cv10";
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-700 py-16 px-6">
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <div class="max-w-3xl mx-auto bg-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-slate-100">
-        <a href="index.html" class="text-blue-600 font-bold mb-8 inline-block">← Volver al inicio</a>
-        <h1 class="text-3xl font-black text-slate-950 mb-8 tracking-tight italic">AVISO LEGAL Y PRIVACIDAD</h1>
-        
-        <div class="space-y-6 leading-relaxed">
-            <p>En cumplimiento de la Ley 34/2002 (LSSI), le informamos que este sitio web es propiedad de <strong>Tu Ahorro Eficiente</strong>.</p>
-            <h2 class="text-xl font-bold text-slate-900 mt-8">1. Uso del sitio</h2>
-            <p>Este portal ofrece herramientas de cálculo de carácter informativo. Los resultados son estimaciones y no constituyen asesoramiento financiero o fiscal vinculante.</p>
-            <h2 class="text-xl font-bold text-slate-900 mt-8">2. Privacidad de datos</h2>
-            <p>No almacenamos datos personales ni bancarios en nuestros servidores. Los cálculos se realizan en el navegador del usuario para garantizar la máxima privacidad.</p>
+
+<body class="bg-slate-50 text-slate-900 antialiased font-sans flex flex-col min-h-screen">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="bg-brand text-white p-2.5 rounded-xl group-hover:bg-brand-dark transition-colors">
+                    <i data-lucide="zap" class="w-6 h-6"></i>
+                </div>
+                <h1 class="text-2xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span
+                        class="text-brand">Eficiente</span></h1>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="index.html#contexto" class="hover:text-brand transition">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="hover:text-brand transition">Herramientas</a>
+                <a href="blog.html" class="hover:text-brand transition">Blog</a>
+                <a href="contacto.html" class="hover:text-brand transition">Contacto</a>
+                <a href="index.html#herramientas"
+                    class="bg-brand text-white px-6 py-3 rounded-full hover:bg-brand-dark transition shadow-md text-xs uppercase tracking-widest font-bold">Empezar</a>
             </div>
-    </div>
+            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu"
+                    class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <main class="flex-grow py-16 px-6">
+        <div class="max-w-3xl mx-auto bg-white p-10 md:p-16 rounded-[2.5rem] shadow-sm border border-slate-100">
+            <a href="index.html" class="text-brand font-bold mb-8 inline-block hover:underline">← Volver al inicio</a>
+            <h1 class="text-4xl font-black text-slate-950 mb-8 tracking-tight italic">AVISO LEGAL Y PRIVACIDAD</h1>
+
+            <div class="space-y-6 leading-relaxed text-slate-700">
+                <p>En cumplimiento de la Ley 34/2002 (LSSI), le informamos que este sitio web es propiedad de <strong>Tu
+                        Ahorro Eficiente</strong>.</p>
+
+                <h2 class="text-xl font-bold text-slate-900 mt-8">1. Uso del sitio</h2>
+                <p>Este portal ofrece herramientas de cálculo de carácter informativo. Los resultados son estimaciones y
+                    no constituyen asesoramiento financiero o fiscal vinculante.</p>
+
+                <h2 class="text-xl font-bold text-slate-900 mt-8">2. Privacidad de datos</h2>
+                <p>No almacenamos datos personales ni bancarios en nuestros servidores. Los cálculos se realizan en el
+                    navegador del usuario para garantizar la máxima privacidad.</p>
+
+                <h2 class="text-xl font-bold text-slate-900 mt-8">3. Propiedad Intelectual</h2>
+                <p>El diseño, código fuente y contenidos de este sitio están protegidos por derechos de propiedad
+                    intelectual. Queda prohibida su reproducción sin autorización previa.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 mt-0 rounded-none relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-left">
+            <div>
+                <a href="index.html" class="flex items-center gap-2 mb-4 group">
+                    <div class="bg-brand text-white p-2.5 rounded-xl transition-colors">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h1 class="text-xl font-extrabold tracking-tighter text-white">TuAhorroEficiente</h1>
+                </a>
+                <p class="font-medium max-w-sm">Portal independiente para la transición energética en España. Datos
+                    actualizados según normativas oficiales de 2026.</p>
+            </div>
+            <div class="grid grid-cols-2 gap-8 md:col-span-2">
+                <div>
+                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Utilidades</h6>
+                    <ul class="space-y-2.5 font-medium text-slate-300">
+                        <li><a href="calculadora-irpf.html"
+                                class="hover:text-brand-accent transition-colors">Calculadora IRPF</a></li>
+                        <li><a href="simulador-solar.html" class="hover:text-brand-accent transition-colors">Simulador
+                                Solar</a></li>
+                        <li><a href="monitor-agua.html" class="hover:text-brand-accent transition-colors">Monitor
+                                Agua</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Información & Legal</h6>
+                    <ul class="space-y-2.5 font-medium text-slate-300">
+                        <li><a href="blog.html" class="hover:text-brand-accent transition-colors">Blog de Ahorro</a>
+                        </li>
+                        <li><a href="contacto.html" class="hover:text-brand-accent transition-colors">Contacto</a></li>
+                        <li><a href="aviso-legal.html" class="hover:text-brand-accent transition-colors">Aviso Legal</a>
+                        </li>
+                        <li><a href="privacidad.html" class="hover:text-brand-accent transition-colors">Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 text-center mt-16 pt-8 border-t border-slate-800">
+            <p class="font-bold">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
+
 </html>
