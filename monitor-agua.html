@@ -148,19 +148,32 @@
     </footer>
 
     <script>
+        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
         lucide.createIcons();
-        function calcularAgua() {
-            const ducha = parseFloat(document.getElementById('ducha').value) || 0;
-            const cisterna = parseFloat(document.getElementById('cisterna').value) || 0;
-            const electro = parseFloat(document.getElementById('electro').value) || 0;
 
-            const litrosDia = (ducha * 12) + (cisterna * 6) + (electro * 40 / 7);
-            const litrosMes = Math.round(litrosDia * 30.4);
-            const costeMes = (litrosMes / 1000) * 1.90; // Precio medio m3 en España aprox
+        // 2. Lógica del Menú Móvil (A prueba de fallos)
+        const btnMenu = document.getElementById('mobile-menu-button');
+        const menuContenedor = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
-            document.getElementById('litros').innerText = litrosMes.toLocaleString() + 'L';
-            document.getElementById('coste-agua').innerText = 'Coste aprox: ' + costeMes.toFixed(2) + '€/mes';
-            document.getElementById('resultado-agua').classList.remove('hidden');
+        if (btnMenu && menuContenedor) {
+            // Abrir/Cerrar menú al hacer clic en el botón
+            btnMenu.addEventListener('click', () => {
+                menuContenedor.classList.toggle('hidden');
+                iconMenu.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
+
+            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuContenedor.classList.add('hidden');
+                    iconMenu.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
         }
     </script>
 </body>

@@ -159,21 +159,32 @@
         </div>
     </footer>
     <script>
+        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
         lucide.createIcons();
-        function calcularSolar() {
-            const g = parseFloat(document.getElementById('gasto').value);
-            const z = parseFloat(document.getElementById('zona').value);
-            if (g > 0) {
-                const p = Math.ceil((g / 15) * 1.2);
-                const a = g * 12 * 0.75 * (z / 1.3);
-                const inv = p * 800;
-                const amort = inv / a;
-                document.getElementById('ahorro-anual').innerText = Math.round(a).toLocaleString() + '€';
-                document.getElementById('placas').innerText = p;
-                document.getElementById('años').innerText = amort.toFixed(1) + ' años';
-                document.getElementById('resultado-solar').classList.remove('hidden');
-                document.getElementById('resultado-solar').scrollIntoView({ behavior: 'smooth' });
-            }
+
+        // 2. Lógica del Menú Móvil (A prueba de fallos)
+        const btnMenu = document.getElementById('mobile-menu-button');
+        const menuContenedor = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (btnMenu && menuContenedor) {
+            // Abrir/Cerrar menú al hacer clic en el botón
+            btnMenu.addEventListener('click', () => {
+                menuContenedor.classList.toggle('hidden');
+                iconMenu.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
+
+            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuContenedor.classList.add('hidden');
+                    iconMenu.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
         }
     </script>
 </body>

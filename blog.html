@@ -152,6 +152,34 @@
             <p class="text-xs">Hecho en España para un futuro sostenible.</p>
         </div>
     </footer>
-    <script>lucide.createIcons();</script>
+    <script>
+        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
+        lucide.createIcons();
+
+        // 2. Lógica del Menú Móvil (A prueba de fallos)
+        const btnMenu = document.getElementById('mobile-menu-button');
+        const menuContenedor = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (btnMenu && menuContenedor) {
+            // Abrir/Cerrar menú al hacer clic en el botón
+            btnMenu.addEventListener('click', () => {
+                menuContenedor.classList.toggle('hidden');
+                iconMenu.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
+
+            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuContenedor.classList.add('hidden');
+                    iconMenu.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
+        }
+    </script>
 </body>
 </html>

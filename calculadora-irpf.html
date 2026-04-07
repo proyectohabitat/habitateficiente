@@ -107,21 +107,32 @@
     </main>
 
     <script>
+        // 1. Renderizar iconos de Lucide (Solo se llama una vez)
         lucide.createIcons();
-        function calcular() {
-            const inv = parseFloat(document.getElementById('inversion').value);
-            const porc = parseFloat(document.getElementById('tipo').value);
-            if(inv > 0) {
-                let res = inv * porc;
-                // Límites estrictos según tabla BOE
-                if(porc === 0.20 && res > (5000 * 0.20)) res = 1000; 
-                else if(porc === 0.40 && res > (7500 * 0.40)) res = 3000;
-                else if(porc === 0.60 && res > (5000 * 0.60)) res = 3000; // Límite anual del 60%
-                
-                const format = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' }).format(res);
-                document.getElementById('cuantia').innerText = format;
-                document.getElementById('resultado').classList.remove('hidden');
-            }
+
+        // 2. Lógica del Menú Móvil (A prueba de fallos)
+        const btnMenu = document.getElementById('mobile-menu-button');
+        const menuContenedor = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        if (btnMenu && menuContenedor) {
+            // Abrir/Cerrar menú al hacer clic en el botón
+            btnMenu.addEventListener('click', () => {
+                menuContenedor.classList.toggle('hidden');
+                iconMenu.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
+
+            // Cerrar el menú automáticamente al hacer clic en cualquier enlace (Mejora de UX)
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuContenedor.classList.add('hidden');
+                    iconMenu.classList.remove('hidden');
+                    iconClose.classList.add('hidden');
+                });
+            });
         }
     </script>
 </body>
