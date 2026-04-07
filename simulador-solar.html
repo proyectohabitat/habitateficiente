@@ -1,136 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5Z8GNSBC');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Ahorro Solar 2026 | Tu Ahorro Eficiente</title>
-
-    <meta name="description" content="Calculadoras gratuitas de ahorro energético en España. Deducción IRPF por eficiencia y simulador solar actualizado a 2026.">
-<meta name="keywords" content="ahorro energetico, calculadora irpf 2026, placas solares españa, eficiencia energetica vivienda">
-<meta name="author" content="Tu Ahorro Eficiente">
-
-<meta property="og:title" content="Tu Ahorro Eficiente | Optimiza tu hogar en 2026">
-<meta property="og:description" content="Usa nuestras herramientas gratuitas para ahorrar miles de euros en impuestos y facturas.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tuahorroeficiente.es">
-<meta property="og:image" content="https://tuahorroeficiente.es/og-image.jpg"> <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3105/3105035.png" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: { brand: { DEFAULT: '#01488e', dark: '#003366', light: '#e6f0fa' } },
-                    fontFamily: { sans: ['Inter', 'sans-serif'] },
-                }
-            }
-        }
+    <title>Simulador Solar 2026 | Calcula tu Ahorro en Placas Fotovoltaicas</title>
+    <meta name="description" content="Simulador gratuito de placas solares. Calcula cuántos paneles necesitas, el coste de instalación y cuánto dinero ahorrarás al mes según tu ubicación en España.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Simulador de Ahorro Solar TuAhorroEficiente",
+      "applicationCategory": "FinanceApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#01488e',dark:'#003366',light:'#f0f7ff'}},fontFamily:{sans:['Inter', 'sans-serif']}}}}</script>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <nav class="bg-white border-b border-slate-100 py-4">
-        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="bg-brand text-white p-2 rounded-lg group-hover:bg-brand-dark transition">
-                    <i data-lucide="sun" class="w-5 h-5"></i>
-                </div>
-                <span class="text-xl font-extrabold tracking-tighter text-slate-950">TuAhorro<span class="text-brand">Eficiente</span></span>
-            </a>
-            <a href="index.html" class="text-sm font-bold text-slate-500 hover:text-brand transition flex items-center gap-1">
-                <i data-lucide="chevron-left" class="w-4 h-4"></i> Volver al inicio
-            </a>
+<body class="bg-white text-slate-900 antialiased font-sans">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z8GNSBC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-left">
+            <a href="index.html" class="flex items-center gap-2 group"><div class="bg-brand text-white p-2.5 rounded-xl transition"><i data-lucide="zap" class="w-6 h-6"></i></div><h1 class="text-2xl font-black text-slate-950 tracking-tighter italic">TUAHORRO<span class="text-brand">EFICIENTE</span></h1></a>
+            <div class="hidden md:flex gap-8 text-sm font-bold text-slate-500 uppercase tracking-widest"><a href="index.html#herramientas" class="hover:text-brand">Herramientas</a><a href="blog.html" class="hover:text-brand">Blog</a><a href="contacto.html" class="hover:text-brand">Contacto</a></div>
         </div>
     </nav>
 
-    <main class="flex-grow py-12 md:py-20 px-6">
-        <div class="max-w-2xl mx-auto text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tighter text-slate-950 mb-4">Simulador de Instalación Fotovoltaica</h1>
-            <p class="text-slate-500 font-medium text-lg">Calcula tu potencial de generación y ahorro anual en 30 segundos.</p>
+    <main class="py-16 px-6 bg-slate-50">
+        <div class="max-w-2xl mx-auto text-center mb-10">
+            <h1 class="text-4xl font-black mb-4 italic tracking-tight">Simulador de <span class="text-brand">Autoconsumo Solar</span></h1>
+            <p class="text-slate-500 font-medium">Estima el retorno de tu inversión en placas fotovoltaicas en menos de 1 minuto.</p>
         </div>
 
-        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-100 p-8 md:p-12">
-            <div class="space-y-8">
-                <div>
-                    <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Gasto mensual en luz (€)</label>
-                    <div class="relative">
-                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-xl">€</span>
-                        <input type="number" id="gasto" placeholder="Ej: 100" 
-                            class="w-full pl-10 pr-4 py-5 bg-slate-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all text-2xl font-extrabold text-slate-900">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold text-slate-500 uppercase tracking-wider mb-3 text-left">Tu Ubicación (Radiación Solar)</label>
-                    <select id="zona" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand focus:bg-white rounded-2xl outline-none transition-all font-semibold text-slate-700 appearance-none cursor-pointer">
-                        <option value="1.5">Sur de España / Islas (Máximo sol)</option>
-                        <option value="1.3">Centro / Levante (Sol alto)</option>
-                        <option value="1.1">Norte de España (Sol moderado)</option>
+        <div class="max-w-xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border p-10 mb-16">
+            <div class="space-y-8 text-left">
+                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Gasto mensual luz promedio (€)</label><input type="number" id="gasto" placeholder="Ej: 100" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none text-2xl font-bold transition-all text-left"></div>
+                <div><label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 text-left">Zona Geográfica</label>
+                    <select id="zona" class="w-full p-5 bg-slate-50 border-2 border-transparent focus:border-brand rounded-2xl outline-none font-semibold text-left">
+                        <option value="1.5">Sur de España / Canarias (Sol Máximo)</option>
+                        <option value="1.3">Centro / Levante (Sol Alto)</option>
+                        <option value="1.1">Norte de España (Sol Moderado)</option>
                     </select>
                 </div>
-
-                <button onclick="calcularSolar()" 
-                    class="w-full bg-brand text-white py-6 rounded-2xl font-extrabold text-lg shadow-xl shadow-brand/20 hover:bg-brand-dark hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
-                    <i data-lucide="zap" class="w-6 h-6"></i> CALCULAR AHORRO SOLAR
-                </button>
+                <button onclick="calcularSolar()" class="w-full bg-brand text-white py-6 rounded-2xl font-black text-xl shadow-xl hover:bg-brand-dark transition-all transform hover:-translate-y-1">CALCULAR MI POTENCIAL</button>
             </div>
-
-            <div id="resultado-solar" class="hidden mt-12 pt-12 border-t border-slate-100">
-                <div class="grid grid-cols-1 gap-4">
-                    <div class="bg-brand text-white p-8 rounded-3xl text-center">
-                        <p class="text-blue-200 font-bold uppercase tracking-widest text-[10px] mb-1">Ahorro anual estimado</p>
-                        <div id="ahorro-anual" class="text-5xl font-black tracking-tighter">0€</div>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center">
-                            <p class="text-slate-400 font-bold text-[10px] uppercase mb-1">Placas recomendadas</p>
-                            <div id="placas" class="text-2xl font-extrabold text-slate-950">0</div>
-                        </div>
-                        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-center">
-                            <p class="text-slate-400 font-bold text-[10px] uppercase mb-1">Amortización aprox.</p>
-                            <div id="años" class="text-2xl font-extrabold text-slate-950">0 años</div>
-                        </div>
-                    </div>
+            <div id="resultado-solar" class="hidden mt-12 pt-12 border-t text-center animate-in fade-in slide-in-from-bottom-4">
+                <p class="text-brand font-bold uppercase text-xs mb-2">Ahorro anual estimado:</p>
+                <div id="ahorro-anual" class="text-6xl font-black text-brand tracking-tighter">0€</div>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-slate-50 p-4 rounded-2xl border"><p class="text-[10px] text-slate-400 font-bold uppercase">Placas sugeridas</p><p id="placas" class="text-xl font-black">0</p></div>
+                    <div class="bg-slate-50 p-4 rounded-2xl border"><p class="text-[10px] text-slate-400 font-bold uppercase">Amortización</p><p id="años" class="text-xl font-black">0 años</p></div>
                 </div>
             </div>
         </div>
+
+        <article class="max-w-4xl mx-auto prose prose-slate mt-20 text-left">
+            <h2 class="text-3xl font-black italic mb-6">Guía: ¿Es rentable poner placas solares en 2026?</h2>
+            <p class="text-slate-600 font-medium leading-relaxed">Con los precios actuales de la tecnología fotovoltaica y la madurez de la <strong>compensación de excedentes</strong> en España, el periodo de amortización ha bajado de los 6 años en la mayoría de regiones.</p>
+            <div class="grid md:grid-cols-2 gap-8 my-10">
+                <div class="bg-white p-8 rounded-3xl border shadow-sm">
+                    <h3 class="font-bold text-brand mb-2 italic">Compensación de excedentes</h3>
+                    <p class="text-sm text-slate-500">La energía que tus placas generan y no consumes se inyecta en la red, descontando dinero directamente de tu factura mensual.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border shadow-sm">
+                    <h3 class="font-bold text-brand mb-2 italic">Deducción IRPF</h3>
+                    <p class="text-sm text-slate-500">Recuerda que instalar placas solares suele calificar para la deducción del 40% o 60% en el IRPF por mejora de eficiencia.</p>
+                </div>
+            </div>
+        </article>
     </main>
 
-    <footer class="py-12 text-center text-slate-400 text-[10px] font-bold border-t border-slate-100 mt-12 uppercase tracking-[0.2em]">
-        &copy; 2026 Tu Ahorro Eficiente - Datos basados en promedios del IDAE
+    <footer class="bg-slate-950 py-16 text-slate-400 text-sm border-t border-slate-800 leading-relaxed">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-left leading-relaxed">
+            <div><h1 class="text-xl font-black text-white italic tracking-tight mb-4">TuAhorroEficiente</h1><p class="font-medium italic">Transformamos el ahorro energético en una realidad financiera para los hogares españoles.</p></div>
+            <div class="grid grid-cols-2 gap-8 md:col-span-2 uppercase font-black tracking-widest text-[10px]">
+                <div class="flex flex-col gap-3"><h6 class="text-white mb-2">Herramientas</h6><a href="calculadora-irpf.html" class="hover:text-brand transition">Calculadora IRPF</a><a href="simulador-solar.html" class="hover:text-brand transition">Simulador Solar</a></div>
+                <div class="flex flex-col gap-3"><h6 class="text-white mb-2">Legal</h6><a href="aviso-legal.html" class="hover:text-brand transition">Aviso Legal</a><a href="privacidad.html" class="hover:text-brand transition">Privacidad</a><a href="cookies.html" class="hover:text-brand transition">Cookies</a></div>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-slate-800 font-bold uppercase text-[9px] tracking-[0.3em] italic">&copy; 2026 Tu Ahorro Eficiente - Datos verificados según BOE</div>
     </footer>
-
     <script>
         lucide.createIcons();
-
-        function calcularSolar() {
-            const gastoMensual = parseFloat(document.getElementById('gasto').value);
-            const factorZona = parseFloat(document.getElementById('zona').value);
-            
-            if(gastoMensual > 0) {
-                // Algoritmo simple de estimación solar 2026
-                const placasNecesarias = Math.ceil((gastoMensual / 15) * 1.2);
-                const ahorroAnual = gastoMensual * 12 * 0.75 * (factorZona / 1.3);
-                const inversionAprox = placasNecesarias * 800; // 800€ por placa instalada aprox
-                const amortizacion = inversionAprox / ahorroAnual;
-
-                document.getElementById('ahorro-anual').innerText = Math.round(ahorroAnual).toLocaleString() + "€";
-                document.getElementById('placas').innerText = placasNecesarias;
-                document.getElementById('años').innerText = amortizacion.toFixed(1) + " años";
-                
+        function calcularSolar(){
+            const g=parseFloat(document.getElementById('gasto').value);
+            const z=parseFloat(document.getElementById('zona').value);
+            if(g>0){
+                const p=Math.ceil((g/15)*1.2);
+                const a=g*12*0.75*(z/1.3);
+                const inv=p*800;
+                const amort=inv/a;
+                document.getElementById('ahorro-anual').innerText=Math.round(a).toLocaleString()+'€';
+                document.getElementById('placas').innerText=p;
+                document.getElementById('años').innerText=amort.toFixed(1)+' años';
                 document.getElementById('resultado-solar').classList.remove('hidden');
-                document.getElementById('resultado-solar').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('resultado-solar').scrollIntoView({behavior:'smooth'});
             }
         }
     </script>
