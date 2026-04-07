@@ -73,14 +73,28 @@
                     <span class="text-[10px] uppercase font-bold text-slate-400 tracking-widest">Inteligencia Energética</span>
                 </div>
             </a>
+
             <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600 uppercase tracking-wide">
-                <a href="#contexto" class="hover:text-brand transition-colors">El Contexto 2026</a>
-                <a href="#herramientas" class="hover:text-brand transition-colors">Herramientas</a>
+                <a href="index.html#contexto" class="hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="hover:text-brand transition-colors">Herramientas</a>
                 <a href="blog.html" class="hover:text-brand transition-colors">Blog & Guías</a>
                 <a href="contacto.html" class="hover:text-brand transition-colors">Contacto</a>
-                <a href="#herramientas" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar Ahorro</a>
+                <a href="index.html#herramientas" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand transition-all shadow-md transform hover:-translate-y-0.5">Auditar Ahorro</a>
             </div>
-            <button class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg"><i data-lucide="menu" class="w-6 h-6"></i></button>
+
+            <button id="mobile-menu-button" aria-label="Abrir menú" class="md:hidden text-slate-900 p-2 border border-slate-100 rounded-lg hover:bg-slate-50 transition-colors focus:outline-none">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl transition-all">
+            <div class="flex flex-col px-6 py-6 gap-6 text-sm font-bold text-slate-600 uppercase tracking-wide">
+                <a href="index.html#contexto" class="mobile-link hover:text-brand transition-colors">El Contexto 2026</a>
+                <a href="index.html#herramientas" class="mobile-link hover:text-brand transition-colors">Herramientas</a>
+                <a href="blog.html" class="mobile-link hover:text-brand transition-colors">Blog & Guías</a>
+                <a href="contacto.html" class="mobile-link hover:text-brand transition-colors">Contacto</a>
+                <a href="index.html#herramientas" class="mobile-link bg-slate-900 text-white px-6 py-4 rounded-xl text-center hover:bg-brand transition-all shadow-md mt-2">Auditar Ahorro</a>
+            </div>
         </div>
     </nav>
 
