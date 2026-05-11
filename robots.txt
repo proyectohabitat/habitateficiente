@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /aviso-legal.html
+Disallow: /privacidad.html
+Disallow: /cookies.html
+Disallow: /googled43b9df3ad6c4c57.html
+
 Sitemap: https://tuahorroeficiente.es/sitemap.xml

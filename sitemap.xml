@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tuahorroeficiente.es/</loc><lastmod>2026-04-07</lastmod><priority>1.00</priority></url>
+  <!-- Homepage -->
+  <url><loc>https://tuahorroeficiente.es/</loc><lastmod>2026-05-12</lastmod><changefreq>weekly</changefreq><priority>1.00</priority></url>
   
-  <url><loc>https://tuahorroeficiente.es/calculadora-irpf.html</loc><lastmod>2026-04-07</lastmod><priority>0.90</priority></url>
-  <url><loc>https://tuahorroeficiente.es/simulador-solar.html</loc><lastmod>2026-04-07</lastmod><priority>0.90</priority></url>
-  <url><loc>https://tuahorroeficiente.es/monitor-agua.html</loc><lastmod>2026-04-07</lastmod><priority>0.80</priority></url>
+  <!-- Herramientas (Money Pages) -->
+  <url><loc>https://tuahorroeficiente.es/calculadora-irpf.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://tuahorroeficiente.es/simulador-solar.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://tuahorroeficiente.es/monitor-agua.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
   
-  <url><loc>https://tuahorroeficiente.es/blog.html</loc><lastmod>2026-04-07</lastmod><priority>0.80</priority></url>
+  <!-- Landing Pages de Servicio -->
+  <url><loc>https://tuahorroeficiente.es/ahorro-luz.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://tuahorroeficiente.es/asesoria-energetica.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://tuahorroeficiente.es/cambiar-compania-luz.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tuahorroeficiente.es/certificados-ahorro-energetico.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://tuahorroeficiente.es/placas-solares.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   
-  <url><loc>https://tuahorroeficiente.es/guia-deduccion-irpf-2026.html</loc><lastmod>2026-04-07</lastmod><priority>0.70</priority></url>
-  <url><loc>https://tuahorroeficiente.es/guia-placas-solares-2026.html</loc><lastmod>2026-04-07</lastmod><priority>0.70</priority></url>
-  <url><loc>https://tuahorroeficiente.es/ajustes-tarifa-luz.html</loc><lastmod>2026-04-07</lastmod><priority>0.70</priority></url>
-  <url><loc>https://tuahorroeficiente.es/rentabilidad-aerotermia-2026.html</loc><lastmod>2026-04-07</lastmod><priority>0.70</priority></url>
-  <url><loc>https://tuahorroeficiente.es/precio-certificado-energetico.html</loc><lastmod>2026-04-07</lastmod><priority>0.70</priority></url>
+  <!-- Blog -->
+  <url><loc>https://tuahorroeficiente.es/blog.html</loc><lastmod>2026-05-12</lastmod><changefreq>weekly</changefreq><priority>0.80</priority></url>
   
-  <url><loc>https://tuahorroeficiente.es/contacto.html</loc><lastmod>2026-04-07</lastmod><priority>0.50</priority></url>
-  <url><loc>https://tuahorroeficiente.es/aviso-legal.html</loc><lastmod>2026-04-07</lastmod><priority>0.10</priority></url>
-  <url><loc>https://tuahorroeficiente.es/privacidad.html</loc><lastmod>2026-04-07</lastmod><priority>0.10</priority></url>
-  <url><loc>https://tuahorroeficiente.es/cookies.html</loc><lastmod>2026-04-07</lastmod><priority>0.10</priority></url>
+  <!-- Artículos del Blog -->
+  <url><loc>https://tuahorroeficiente.es/guia-deduccion-irpf-2026.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://tuahorroeficiente.es/guia-placas-solares-2026.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://tuahorroeficiente.es/ajustes-tarifa-luz.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://tuahorroeficiente.es/rentabilidad-aerotermia-2026.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://tuahorroeficiente.es/precio-certificado-energetico.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  
+  <!-- Landing Pages Locales -->
+  <url><loc>https://tuahorroeficiente.es/asesor-energetico-barcelona.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://tuahorroeficiente.es/asesor-energetico-madrid.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://tuahorroeficiente.es/asesor-energetico-valencia.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  
+  <!-- Empresa -->
+  <url><loc>https://tuahorroeficiente.es/sobre-nosotros.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
+  <url><loc>https://tuahorroeficiente.es/contacto.html</loc><lastmod>2026-05-12</lastmod><changefreq>monthly</changefreq><priority>0.50</priority></url>
 </urlset>
